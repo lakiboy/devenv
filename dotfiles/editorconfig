@@ -1,0 +1,19 @@
+root = true
+
+[*]
+end_of_line = LF
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+[*.rb]
+indent_style = space
+indent_size = 2
+
+[*.yml]
+indent_style = space
+indent_size = 2
+
+[Vagrantfile]
+indent_style = space
+indent_size = 2

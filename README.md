@@ -8,7 +8,5 @@ Install [brew](http://brew.sh) first then run below setup routine.
 
  * `$ brew tap homebrew/bundle`
  * `$ brew bundle`
- * `$ ansible-playbook -i hosts setup.yml --ask-sudo-pass`
+ * `$ ansible-playbook setup.yml`
  * `$ rcup -d dotfile`
- 
- 

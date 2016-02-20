@@ -1,6 +1,5 @@
-
 ---
-- hosts: all
+- hosts: devmachine
 
   roles:
     - devenv
