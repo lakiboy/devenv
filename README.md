@@ -10,3 +10,10 @@ Install [brew](http://brew.sh) first then run below setup routine.
  * `$ brew bundle`
  * `$ ansible-playbook setup.yml`
  * `$ rcup -d dotfile`
+
+## Docker
+
+ * `$ docker-machine create default --driver virtualbox`
+ * `$ docker-machine stop default`
+ * `$ VBoxManage modifyvm default --memory 4096`
+ * `$ docker-machine start default`

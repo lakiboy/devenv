@@ -10,6 +10,7 @@ cask 'virtualbox', args: { appdir: '/Applications' }
 cask 'vagrant', args: { appdir: '/Applications' }
 cask 'iterm2-beta', args: { appdir: '/Applications' }
 cask 'skype', args: { appdir: '/Applications' }
+cask 'phpstorm', args: { appdir: '/Applications' }
 cask 'slack'
 cask 'hipchat'
 cask 'sequel-pro'
