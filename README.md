@@ -21,3 +21,5 @@ Install [brew](http://brew.sh) first then run below setup routine.
  * `$ docker-machine stop default`
  * `$ VBoxManage modifyvm default --memory 4096`
  * `$ docker-machine start default`
+
+Setting up [nfs](https://github.com/adlogix/docker-machine-nfs) with Docker.

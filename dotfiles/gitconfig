@@ -10,3 +10,6 @@
     co = checkout
     aa = add --all
     st = status -s
+
+[core]
+    excludesfile = /Users/lakiboy/.gitignore
