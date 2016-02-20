@@ -17,6 +17,7 @@ cask 'sequel-pro'
 cask 'dockertoolbox'
 cask 'dropbox'
 cask 'sublime-text3'
+cask 'evernote'
 
 tap 'homebrew/completions'
 tap 'thoughtbot/formulae'

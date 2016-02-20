@@ -11,6 +11,10 @@ Install [brew](http://brew.sh) first then run below setup routine.
  * `$ ansible-playbook setup.yml`
  * `$ rcup -d dotfile`
 
+## Finalize
+
+ * `$ ssh-keygen -t rsa`
+
 ## Docker
 
  * `$ docker-machine create default --driver virtualbox`
