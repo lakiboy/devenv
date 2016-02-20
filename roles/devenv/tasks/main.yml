@@ -1,0 +1,12 @@
+---
+
+- name: Put Dock on the right side
+  osx_defaults: domain=com.apple.dock key=orientation type=string value=right
+  notify: Restart Dock
+
+- name: Set Finder sidebar text to small
+  osx_defaults: domain=NSGlobalDomain key=NSTableViewDefaultSizeMode type=int value=1
+  notify: Restart Finder
+
+#- name: Enable secondary click
+#  osx_defaults: domain=com.apple.driver.AppleBluetoothMultitouch.mouse key=MouseButtonMode type=string value=TwoButton
