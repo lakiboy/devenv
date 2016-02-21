@@ -5,3 +5,23 @@
 
 - name: Dotfiles | Copy gitconfig
   template: "src=gitconfig.j2 dest={{ playbook_dir }}/dotfiles/gitconfig owner={{ devenv_user }} mode=0644"
+
+- name: Dotfiles | Get docker version
+  command: /usr/local/bin/docker version --format {% raw %}'{{.Server.Version}}'{% endraw %}
+  register: docker_version
+
+- name: Dotfiles | Bash completion | Docker
+  get_url:
+    url: "https://raw.githubusercontent.com/docker/docker/v{{ docker_version.stdout }}/contrib/completion/bash/docker"
+    dest: /usr/local/etc/bash_completion.d/docker
+    mode: 0644
+
+- name: Dotfiles | Get docker-compose version
+  command: /usr/local/bin/docker-compose version --short
+  register: docker_compose_version
+
+- name: Dotfiles | Bash completion | Docker Compose
+  get_url:
+    url: "https://raw.githubusercontent.com/docker/compose/{{ docker_compose_version.stdout }}/contrib/completion/bash/docker-compose"
+    dest: /usr/local/etc/bash_completion.d/docker-compose
+    mode: 0644
