@@ -1,4 +1,4 @@
 ---
 
 - include: dotfiles.yml
-# - include: osx.yml
+- include: osx.yml

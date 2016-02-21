@@ -32,8 +32,9 @@
   osx_defaults: domain=com.apple.screensaver key=askForPasswordDelay type=float value=0
 
 - name: OSX | Set computer name (as done via System Preferences → Sharing)
-  command: 'scutil --set {{ item }} "mpb"'
+  command: 'scutil --set {{ item }} "{{ devenv_machine }}"'
   with_items:
     - ComputerName
     - HostName
     - LocalHostName
+  when: devenv_change_machine_name
