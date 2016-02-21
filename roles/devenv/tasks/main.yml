@@ -2,3 +2,4 @@
 
 - include: dotfiles.yml
 - include: osx.yml
+- include: services.yml

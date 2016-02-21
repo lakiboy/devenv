@@ -8,7 +8,7 @@ Install [brew](http://brew.sh) first then run below setup routine.
 
  * `$ brew tap homebrew/bundle`
  * `$ brew bundle`
- * `$ cp setup.yml.dist setup.yml` # Adjust values
+ * `$ cp setup.yml.dist setup.yml # Adjust values`
  * `$ ansible-playbook setup.yml`
  * `$ rcup -d dotfile`
 

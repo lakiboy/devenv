@@ -31,10 +31,18 @@
 - name: OSX | Security | Require password immediately after sleep or screen saver begins
   osx_defaults: domain=com.apple.screensaver key=askForPasswordDelay type=float value=0
 
-- name: OSX | Set computer name (as done via System Preferences → Sharing)
+- name: OSX | Security | Set computer name (as done via System Preferences → Sharing)
   command: 'scutil --set {{ item }} "{{ devenv_machine }}"'
   with_items:
     - ComputerName
     - HostName
     - LocalHostName
   when: devenv_change_machine_name
+  # See: See: https://github.com/ansible/ansible/issues/13763
+  # become: yes
+  # become_method: sudo
+
+- name: OSX | Spotlight | Setup Spotlight exlusions
+  osx_defaults: "domain='/.Spotlight-V100/VolumeConfiguration' key=Exclusions type=array value={{ devenv_spotlight_exclusions }}"
+  become: yes
+  become_method: sudo

@@ -4,4 +4,7 @@ devenv_docker_ip:   192.168.99.100
 devenv_docker_port: 2376
 devenv_docker_name: default
 
+devenv_spotlight_exclusions:
+  - "/Users/{{ devenv_user }}/Projects"
+
 devenv_change_machine_name: false

@@ -1,0 +1,27 @@
+
+- name: Services | DNS | Copy dnsmasq.conf
+  template: "src=dnsmasq.conf.j2 dest=/usr/local/etc/dnsmasq.conf owner={{ devenv_user }} mode=0644"
+
+- name: Services | DNS | Create resolver directory
+  file: dest=/etc/resolver state=directory
+  become: yes
+  become_method: sudo
+
+- name: Services | DNS | Configure resolver (dev)
+  copy: "src=resolver.conf dest=/etc/resolver/dev"
+  become: yes
+  become_method: sudo
+
+- name: Services | DNS | Configure resolver (docker)
+  copy: "src=resolver.conf dest=/etc/resolver/docker"
+  become: yes
+  become_method: sudo
+
+# See: https://github.com/ansible/ansible/issues/13763
+# - name: Services | DNS | Configure resolver
+#   copy: "src=resolver.conf dest=/etc/resolver/{{ item }}"
+#   become: yes
+#   become_method: sudo
+#   with_items:
+#     - dev
+#     - docker
