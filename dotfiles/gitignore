@@ -30,3 +30,5 @@
 
 # Apps
 .idea
+*.sublime-project
+*.sublime-workspace
