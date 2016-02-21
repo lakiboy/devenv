@@ -23,6 +23,7 @@ cask 'vagrant-manager'
 cask 'ccmenu'
 cask 'soulver'
 cask 'synology-cloud-station'
+cask 'jeromelebel-mongohub'
 
 tap 'homebrew/completions'
 tap 'thoughtbot/formulae'
