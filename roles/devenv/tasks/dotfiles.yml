@@ -1,0 +1,7 @@
+---
+
+- name: Dotfiles | Copy bash_profile
+  template: "src=bash_profile.j2 dest={{ playbook_dir }}/dotfiles/bash_profile owner={{ devenv_user }} mode=0755"
+
+- name: Dotfiles | Copy gitconfig
+  template: "src=gitconfig.j2 dest={{ playbook_dir }}/dotfiles/gitconfig owner={{ devenv_user }} mode=0644"

@@ -1,0 +1,39 @@
+---
+
+- name: OSX | Dock | Put on the right side
+  osx_defaults: domain=com.apple.dock key=orientation type=string value=right
+  notify: Restart Dock
+
+- name: OSX | Finder | set sidebar text to small
+  osx_defaults: domain=NSGlobalDomain key=NSTableViewDefaultSizeMode type=int value=1
+  notify: Restart Finder
+
+- name: OSX | Trackpad | Enable tap to click for this user and for the login screen
+  command: "{{ item }}"
+  with_items:
+    - defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+    - defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+    - defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+  changed_when: false
+
+- name: OSX | Trackpad | Map bottom right corner to right-click
+  command: "{{ item }}"
+  with_items:
+    - defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+    - defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+    - defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+    - defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+  changed_when: false
+
+- name: OSX | Security | Require password immediately after sleep or screen saver begins
+  osx_defaults: domain=com.apple.screensaver key=askForPassword type=int value=1
+
+- name: OSX | Security | Require password immediately after sleep or screen saver begins
+  osx_defaults: domain=com.apple.screensaver key=askForPasswordDelay type=float value=0
+
+- name: OSX | Set computer name (as done via System Preferences → Sharing)
+  command: 'scutil --set {{ item }} "mpb"'
+  with_items:
+    - ComputerName
+    - HostName
+    - LocalHostName

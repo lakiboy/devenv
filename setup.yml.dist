@@ -1,0 +1,14 @@
+---
+- hosts: devmachine
+
+  vars:
+    devenv_user: lakiboy
+
+    devenv_git_user_name:  Dmitri Lakachauskis
+    devenv_git_user_email: lakiboy83@gmail.com
+
+    devenv_github_api_token:          ~
+    devenv_homebrew_github_api_token: ~
+
+  roles:
+    - devenv
