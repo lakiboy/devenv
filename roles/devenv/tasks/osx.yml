@@ -4,8 +4,16 @@
   osx_defaults: domain=com.apple.dock key=orientation type=string value=right
   notify: Restart Dock
 
-- name: OSX | Finder | set sidebar text to small
+- name: OSX | Finder | Set sidebar text to small
   osx_defaults: domain=NSGlobalDomain key=NSTableViewDefaultSizeMode type=int value=1
+  notify: Restart Finder
+
+- name: OSX | Finder | Disable the warning before emptying the Trash
+  osx_defaults: domain=com.apple.finder key=WarnOnEmptyTrash type=bool value=false
+  notify: Restart Finder
+
+- name: OSX | Finder | Always show scrollbars
+  osx_defaults: domain=NSGlobalDomain key=AppleShowScrollBars type=string value=Always
   notify: Restart Finder
 
 # - name: OSX | Trackpad | Enable tap to click for this user and for the login screen
