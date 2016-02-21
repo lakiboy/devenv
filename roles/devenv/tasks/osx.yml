@@ -37,7 +37,7 @@
     - ComputerName
     - HostName
     - LocalHostName
-  when: devenv_change_machine_name
+  when: devenv_osx_change_machine_name
   # See: See: https://github.com/ansible/ansible/issues/13763
   # become: yes
   # become_method: sudo

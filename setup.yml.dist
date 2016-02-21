@@ -15,7 +15,8 @@
     devenv_homebrew_github_api_token: ~
 
     # Options
-    devenv_change_machine_name: true
+    devenv_osx_updates:             true
+    devenv_osx_change_machine_name: true
 
   roles:
     - devenv

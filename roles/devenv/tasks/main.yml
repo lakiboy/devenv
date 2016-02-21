@@ -1,5 +1,8 @@
 ---
 
 - include: dotfiles.yml
+
 - include: osx.yml
+  when: devenv_osx_updates
+
 - include: services.yml
