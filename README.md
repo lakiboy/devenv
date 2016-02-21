@@ -24,11 +24,11 @@ Then install [brew](http://brew.sh) and run below setup routine.
  * `$ VBoxManage modifyvm default --memory 4096`
  * `$ docker-machine start default`
 
-Setting up [nfs](https://github.com/adlogix/docker-machine-nfs) with Docker.
+Set up [nfs](https://github.com/adlogix/docker-machine-nfs) with Docker.
 
 ## Services
 
-Use LaunchRocket pref pane to manage brew services.
+Use _LaunchRocket_ pref pane to manage brew services.
 
 Reverse proxy:
 
