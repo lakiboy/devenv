@@ -1,0 +1,22 @@
+{
+    "default_line_ending": "unix",
+
+    // Set to true to insert spaces when tab is pressed
+    "translate_tabs_to_spaces": true,
+
+    // Set to true to ensure the last line of the file ends in a newline character when saving
+    "ensure_newline_at_eof_on_save": true,
+
+    "trim_trailing_white_space_on_save": true,
+
+    "folder_exclude_patterns": [
+        ".git",
+        "node_modules"
+    ],
+
+    // Display file encoding in the status bar
+    "show_encoding": true,
+
+    // Display line endings in the status bar
+    "show_line_endings": true
+}

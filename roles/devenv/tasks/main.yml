@@ -6,3 +6,4 @@
   when: devenv_osx_updates
 
 - include: services.yml
+- include: tools.yml

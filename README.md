@@ -4,7 +4,7 @@ My OSX development environment.
 
 First download App Store managed apps.
 Then install [brew](http://brew.sh) and run below setup routine.
- 
+
 ## Setup
 
  * `$ brew tap homebrew/bundle`
