@@ -1,9 +1,0 @@
-
-# Docker
-export DOCKER_HOST=tcp://192.168.99.100:2376
-export DOCKER_MACHINE_NAME=default
-export DOCKER_TLS_VERIFY=1
-export DOCKER_CERT_PATH=/Users/lakiboy/.docker/machine/machines/default
-
-export GITHUB_API_TOKEN=eb46a9b0b0f7ce385e7302af1138228f81a75b54
-export HOMEBREW_GITHUB_API_TOKEN=eb46a9b0b0f7ce385e7302af1138228f81a75b54
