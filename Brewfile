@@ -22,6 +22,7 @@ cask 'messenger'
 cask 'vagrant-manager'
 cask 'ccmenu'
 cask 'soulver'
+cask 'synology-cloud-station'
 
 tap 'homebrew/completions'
 tap 'thoughtbot/formulae'

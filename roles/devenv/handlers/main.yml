@@ -10,3 +10,6 @@
   command: killall -HUP mDNSResponder
   become: yes
   become_method: sudo
+
+- name: Restart Spotlight
+  command: killall mds

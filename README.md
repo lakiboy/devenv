@@ -2,7 +2,7 @@
 
 My OSX development environment.
 
-First download App store managed apps.
+First download App Store managed apps.
 Then install [brew](http://brew.sh) and run below setup routine.
  
 ## Setup
