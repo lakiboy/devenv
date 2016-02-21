@@ -20,6 +20,8 @@ cask 'sublime-text3'
 cask 'evernote'
 cask 'messenger'
 cask 'vagrant-manager'
+cask 'ccmenu'
+cask 'soulver'
 
 tap 'homebrew/completions'
 tap 'thoughtbot/formulae'

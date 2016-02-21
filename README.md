@@ -2,7 +2,8 @@
 
 My OSX development environment.
 
-Install [brew](http://brew.sh) first then run below setup routine.
+First download App store managed apps.
+Then install [brew](http://brew.sh) and run below setup routine.
  
 ## Setup
 
@@ -24,3 +25,7 @@ Install [brew](http://brew.sh) first then run below setup routine.
  * `$ docker-machine start default`
 
 Setting up [nfs](https://github.com/adlogix/docker-machine-nfs) with Docker.
+
+## Services
+
+ * Use LaunchRocket pref pane to manage brew services.
