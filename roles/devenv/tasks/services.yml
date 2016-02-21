@@ -11,11 +11,13 @@
   copy: "src=resolver.conf dest=/etc/resolver/dev"
   become: yes
   become_method: sudo
+  notify: Flush DNS
 
 - name: Services | DNS | Configure resolver (docker)
   copy: "src=resolver.conf dest=/etc/resolver/docker"
   become: yes
   become_method: sudo
+  notify: Flush DNS
 
 # See: https://github.com/ansible/ansible/issues/13763
 # - name: Services | DNS | Configure resolver

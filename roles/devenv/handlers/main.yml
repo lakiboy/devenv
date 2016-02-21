@@ -5,3 +5,8 @@
 
 - name: Restart Finder
   command: killall Finder
+
+- name: Flush DNS
+  command: killall -HUP mDNSResponder
+  become: yes
+  become_method: sudo
