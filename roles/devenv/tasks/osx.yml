@@ -16,6 +16,15 @@
   osx_defaults: domain=NSGlobalDomain key=AppleShowScrollBars type=string value=Always
   notify: Restart Finder
 
+- name: OSX | Input | Disable auto-correct
+  osx_defaults: domain=NSGlobalDomain key=NSAutomaticSpellingCorrectionEnabled type=bool value=false
+
+- name: OSX | Input | Disable smart quotes
+  osx_defaults: domain=NSGlobalDomain key=NSAutomaticQuoteSubstitutionEnabled type=bool value=false
+
+- name: OSX | Input | Disable smart dashes
+  osx_defaults: domain=NSGlobalDomain key=NSAutomaticDashSubstitutionEnabled type=bool value=false
+
 # - name: OSX | Trackpad | Enable tap to click for this user and for the login screen
 #   command: "{{ item }}"
 #   with_items:
