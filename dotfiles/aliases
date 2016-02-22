@@ -12,3 +12,9 @@ alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
+
+colorflag="-G"
+
+# List
+alias ll="ls -lhF ${colorflag}"
+alias la="ls -lhaF ${colorflag}"
