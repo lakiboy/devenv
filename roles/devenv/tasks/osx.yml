@@ -12,9 +12,9 @@
   osx_defaults: domain=com.apple.finder key=WarnOnEmptyTrash type=bool value=false
   notify: Restart Finder
 
-- name: OSX | Finder | Always show scrollbars
-  osx_defaults: domain=NSGlobalDomain key=AppleShowScrollBars type=string value=Always
-  notify: Restart Finder
+# - name: OSX | Finder | Always show scrollbars
+#   osx_defaults: domain=NSGlobalDomain key=AppleShowScrollBars type=string value=Always
+#   notify: Restart Finder
 
 - name: OSX | Input | Disable auto-correct
   osx_defaults: domain=NSGlobalDomain key=NSAutomaticSpellingCorrectionEnabled type=bool value=false

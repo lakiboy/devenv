@@ -1,7 +1,9 @@
 export PATH="/usr/local/sbin:$PATH"
 
-source ~/.aliases
-source ~/.exports
+for file in ~/.{exports,aliases,extra}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion

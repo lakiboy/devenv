@@ -35,3 +35,9 @@ Reverse proxy:
 ```bash
 $ docker run --name nginx_proxy -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
 ```
+
+System wide MySQL:
+
+```bash
+$ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<password> -d mysql:5.6
+```
