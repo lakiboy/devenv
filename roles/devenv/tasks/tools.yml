@@ -1,4 +1,9 @@
 ---
 
+- name: Tools | Capifony | Install
+  gem: name=capifony user_install=no
+  become: yes
+  become_method: sudo
+
 - name: Tools | Sublime | Update settings
   copy: src=sublime-settings dest='~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings'
