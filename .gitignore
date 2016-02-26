@@ -1,4 +1,5 @@
 /dotfiles/ansible.cfg
 /dotfiles/gitconfig
 /dotfiles/exports
+/dotfiles/iterm2
 /setup.yml

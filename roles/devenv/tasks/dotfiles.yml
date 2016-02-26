@@ -28,3 +28,9 @@
 
 - name: Dotfiles | Ansible | Default config
   template: "src=ansible.cfg.j2 dest={{ playbook_dir }}/dotfiles/ansible.cfg owner={{ devenv_user }} mode=0644"
+
+- name: Dotfiles | iTerm2 | Shell integration
+  get_url:
+    url: https://iterm2.com/misc/bash_startup.in
+    dest: "{{ playbook_dir }}/dotfiles/iterm2"
+    mode: 0755

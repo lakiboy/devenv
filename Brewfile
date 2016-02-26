@@ -26,6 +26,7 @@ cask 'soulver'
 cask 'synology-cloud-station'
 cask 'jeromelebel-mongohub'
 cask 'harvest'
+cask 'dash'
 
 tap 'homebrew/bundle'
 tap 'homebrew/completions'
