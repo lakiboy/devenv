@@ -25,3 +25,6 @@
     url: "https://raw.githubusercontent.com/docker/compose/{{ docker_compose_version.stdout }}/contrib/completion/bash/docker-compose"
     dest: /usr/local/etc/bash_completion.d/docker-compose
     mode: 0644
+
+- name: Dotfiles | Ansible | Default config
+  template: "src=ansible.cfg.j2 dest={{ playbook_dir }}/dotfiles/ansible.cfg owner={{ devenv_user }} mode=0644"

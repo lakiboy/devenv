@@ -30,5 +30,6 @@
 
 # Apps
 .idea
+.vagrant
 *.sublime-project
 *.sublime-workspace

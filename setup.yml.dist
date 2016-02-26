@@ -14,6 +14,11 @@
     devenv_github_api_token:          ~
     devenv_homebrew_github_api_token: ~
 
+    # Ansible
+    devenv_ansible_role_paths:
+      - /Users/lakiboy/.ansible/roles
+      - /Users/lakiboy/Projects/ansible/roles
+
     # Options
     devenv_osx_updates:             true
     devenv_osx_change_machine_name: true
