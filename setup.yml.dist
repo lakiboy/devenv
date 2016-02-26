@@ -16,8 +16,8 @@
 
     # Ansible
     devenv_ansible_role_paths:
-      - /Users/lakiboy/.ansible/roles
-      - /Users/lakiboy/Projects/ansible/roles
+      - "/Users/{{ devenv_user }}/.ansible/roles"
+      - "/Users/{{ devenv_user }}/Projects/ansible/roles"
 
     # Options
     devenv_osx_updates:             true
