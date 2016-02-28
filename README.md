@@ -40,4 +40,5 @@ System wide MySQL:
 
 ```bash
 $ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<password> -d mysql:5.6
+$ docker run --name mariadb -p 3307:3306 -e MYSQL_ROOT_PASSWORD=<password> -d mariadb:10.1
 ```
