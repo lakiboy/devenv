@@ -9,13 +9,6 @@ Then install [brew](http://brew.sh) and run below setup routine.
 
  * `$ brew tap homebrew/bundle`
  * `$ brew bundle`
- * `$ cp setup.yml.dist setup.yml # Adjust values`
- * `$ ansible-playbook setup.yml`
- * `$ rcup -d dotfile`
-
-## Finalize
-
- * `$ ssh-keygen -t rsa`
 
 ## Docker
 
@@ -25,6 +18,16 @@ Then install [brew](http://brew.sh) and run below setup routine.
  * `$ docker-machine start default`
 
 Set up [nfs](https://github.com/adlogix/docker-machine-nfs) with Docker.
+
+## Configure 
+
+ * `$ cp setup.yml.dist setup.yml # Adjust values`
+ * `$ ansible-playbook setup.yml`
+ * `$ rcup -d dotfile`
+
+## Finalize
+
+ * `$ ssh-keygen -t rsa`
 
 ## Services
 
