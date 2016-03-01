@@ -24,7 +24,7 @@ Set up [nfs](https://github.com/adlogix/docker-machine-nfs) with Docker.
 
  * `$ cp setup.yml.dist setup.yml # Adjust values`
  * `$ ansible-playbook setup.yml`
- * `$ rcup -d dotfile`
+ * `$ rcup -d dotfiles`
 
 ## Finalize
 

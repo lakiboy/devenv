@@ -5,5 +5,8 @@
   become: yes
   become_method: sudo
 
+- name: Tools | Subline | Create directory for prefs
+  file: dest='~/Library/Application Support/Sublime Text 3/Packages/User' state=directory
+
 - name: Tools | Sublime | Update settings
   copy: src=sublime-settings dest='~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings'
