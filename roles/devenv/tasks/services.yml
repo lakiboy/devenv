@@ -7,23 +7,9 @@
   become: yes
   become_method: sudo
 
-- name: Services | DNS | Configure resolver (dev)
-  copy: "src=resolver.conf dest=/etc/resolver/dev"
+# If fails, see: https://github.com/ansible/ansible/issues/13763
+- name: Services | DNS | Configure resolver
+  copy: "src=resolver.conf dest=/etc/resolver/{{ item.domain }}"
   become: yes
   become_method: sudo
-  notify: Flush DNS
-
-- name: Services | DNS | Configure resolver (docker)
-  copy: "src=resolver.conf dest=/etc/resolver/docker"
-  become: yes
-  become_method: sudo
-  notify: Flush DNS
-
-# See: https://github.com/ansible/ansible/issues/13763
-# - name: Services | DNS | Configure resolver
-#   copy: "src=resolver.conf dest=/etc/resolver/{{ item }}"
-#   become: yes
-#   become_method: sudo
-#   with_items:
-#     - dev
-#     - docker
+  with_items: '{{ devenv_dnsmasq_hosts }}'

@@ -10,3 +10,7 @@ devenv_spotlight_exclusions:
   - "/Users/{{ devenv_user }}/VirtualBox VMs"
 
 devenv_change_machine_name: false
+
+devenv_dnsmasq_hosts:
+  - { domain: dev, ip: 127.0.0.1 }
+  - { domain: docker, ip: "{{ devenv_docker_ip }}" }

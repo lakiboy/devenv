@@ -1,2 +1,3 @@
-address=/dev/127.0.0.1
-address=/docker/{{ devenv_docker_ip }}
+{% for host in devenv_dnsmasq_hosts %}
+address=/{{ host.domain }}/{{ host.ip }}
+{% endfor %}
