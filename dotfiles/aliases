@@ -18,3 +18,5 @@ colorflag="-G"
 # List
 alias ll="ls -lhF ${colorflag}"
 alias la="ls -lhaF ${colorflag}"
+
+alias sed=gsed
