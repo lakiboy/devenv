@@ -32,6 +32,7 @@ tap 'homebrew/completions'
 tap 'thoughtbot/formulae'
 
 brew 'git'
+brew 'git-flow'
 brew 'ansible'
 brew 'libyaml'
 brew 's3cmd'
