@@ -1,5 +1,9 @@
 export PATH="/usr/local/sbin:$PATH"
 
+parse_git_branch() {
+    git branch | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
+
 for file in ~/.{exports,aliases,iterm2,extra}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
