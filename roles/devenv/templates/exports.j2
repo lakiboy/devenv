@@ -7,3 +7,5 @@ export DOCKER_CERT_PATH=/Users/{{ devenv_user }}/.docker/machine/machines/{{ dev
 
 export GITHUB_API_TOKEN={{ devenv_github_api_token }}
 export HOMEBREW_GITHUB_API_TOKEN={{ devenv_homebrew_github_api_token }}
+
+export PROMPT_COMMAND='if [ -d .git ]; then echo -e "\033[32m$(parse_git_branch)\033[00m"; fi'
