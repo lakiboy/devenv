@@ -20,7 +20,7 @@ Then install [brew](http://brew.sh) and run below setup routine.
 
 Set up [nfs](https://github.com/adlogix/docker-machine-nfs) with Docker.
 
-## Configure 
+## Configure
 
  * `$ cp setup.yml.dist setup.yml # Adjust values`
  * `$ ansible-playbook setup.yml`
@@ -45,4 +45,5 @@ System wide MySQL:
 ```bash
 $ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<password> -d mysql:5.6
 $ docker run --name mariadb -p 3307:3306 -e MYSQL_ROOT_PASSWORD=<password> -d mariadb:10.1
+$ docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=<password> -d postgres
 ```
