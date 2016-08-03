@@ -15,6 +15,7 @@ cask 'diffmerge', args: { appdir: '/Applications' }
 cask 'slack'
 cask 'hipchat'
 cask 'sequel-pro'
+cask 'postico'
 cask 'dockertoolbox'
 cask 'dropbox'
 cask 'sublime-text'
