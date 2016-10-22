@@ -8,7 +8,7 @@ cask 'launchrocket', args: { appdir: '/Applications' }
 cask 'spotify', args: { appdir: '/Applications' }
 cask 'virtualbox', args: { appdir: '/Applications' }
 cask 'vagrant', args: { appdir: '/Applications' }
-cask 'iterm2-beta', args: { appdir: '/Applications' }
+cask 'iterm2', args: { appdir: '/Applications' }
 cask 'skype', args: { appdir: '/Applications' }
 cask 'phpstorm', args: { appdir: '/Applications' }
 cask 'diffmerge', args: { appdir: '/Applications' }
@@ -16,7 +16,7 @@ cask 'slack'
 cask 'hipchat'
 cask 'sequel-pro'
 cask 'postico'
-cask 'dockertoolbox'
+cask 'docker-toolbox'
 cask 'dropbox'
 cask 'sublime-text'
 cask 'evernote'
@@ -26,6 +26,9 @@ cask 'synology-cloud-station-drive'
 cask 'harvest'
 cask 'dash'
 cask 'send-to-kindle'
+cask 'atom'
+cask 'appcleaner'
+cask 'vlc'
 
 tap 'homebrew/bundle'
 tap 'homebrew/completions'
