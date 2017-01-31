@@ -37,7 +37,7 @@ Use _LaunchRocket_ pref pane to manage brew services.
 Reverse proxy:
 
 ```bash
-$ docker run --name nginx_proxy -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
+$ docker run --name nginx_proxy -d -p 80:80 --restart always -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
 ```
 
 System wide MySQL:
