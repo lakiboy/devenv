@@ -28,6 +28,7 @@ cask 'dash'
 cask 'atom'
 cask 'appcleaner'
 cask 'vlc'
+cask 'ngrok'
 
 tap 'homebrew/bundle'
 tap 'homebrew/completions'
