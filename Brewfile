@@ -22,6 +22,7 @@ cask 'sequel-pro'
 cask 'skype'
 cask 'slack'
 cask 'spotify'
+cask 'steam'
 cask 'synology-cloud-station-drive'
 cask 'telegram'
 cask 'vagrant'
@@ -46,3 +47,5 @@ brew 'rcm'
 brew 's3cmd'
 brew 'ssh-copy-id'
 brew 'vim'
+
+mas 'Wunderlist', id: 410628904
