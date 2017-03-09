@@ -2,8 +2,7 @@
 
 My OSX development environment.
 
-First download App Store managed apps.
-Then install [brew](http://brew.sh) and run below setup routine.
+Install [brew](http://brew.sh) and run below setup routine.
 
 ## Setup
 
@@ -17,8 +16,7 @@ Then install [brew](http://brew.sh) and run below setup routine.
  * `$ VBoxManage modifyvm default --memory 4096`
  * `$ docker-machine start default`
  * `$ eval $(docker-machine env default)`
-
-Set up [nfs](https://github.com/adlogix/docker-machine-nfs) with Docker.
+ * `$ docker-machine-nfs default`
 
 ## Configure
 
