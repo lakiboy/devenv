@@ -49,3 +49,4 @@ brew 'ssh-copy-id'
 brew 'vim'
 
 mas 'Wunderlist', id: 410628904
+mas 'Monosnap', id: 540348655
