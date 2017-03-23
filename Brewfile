@@ -37,12 +37,14 @@ tap 'thoughtbot/formulae'
 
 brew 'ansible'
 brew 'bash-completion'
+brew 'csvfix'
 brew 'docker-machine-nfs'
 brew 'dnsmasq'
 brew 'git'
 brew 'git-flow'
 brew 'gnu-sed'
 brew 'mas'
+brew 'pgcli'
 brew 'rcm'
 brew 's3cmd'
 brew 'ssh-copy-id'
@@ -50,3 +52,4 @@ brew 'vim'
 
 mas 'Wunderlist', id: 410628904
 mas 'Monosnap', id: 540348655
+mas 'Yandex.Disk', id: 560459030
