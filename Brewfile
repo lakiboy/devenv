@@ -49,8 +49,10 @@ brew 'pgloader'
 brew 'rcm'
 brew 's3cmd'
 brew 'ssh-copy-id'
+brew 'vagrant-completion'
 brew 'vim'
 
 mas 'Wunderlist', id: 410628904
 mas 'Monosnap', id: 540348655
 mas 'Yandex.Disk', id: 560459030
+mas 'Microsoft Remote Desktop', id: 715768417
