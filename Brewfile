@@ -28,8 +28,13 @@ cask 'telegram'
 cask 'vagrant'
 cask 'vagrant-manager'
 cask 'virtualbox'
+cask 'vlc'
 cask 'whatsapp'
-# cask 'vlc'
+
+# Java
+cask 'java'
+cask 'intellij-idea-ce'
+cask 'jd-gui'
 
 tap 'homebrew/bundle'
 tap 'homebrew/completions'
@@ -52,7 +57,12 @@ brew 'ssh-copy-id'
 brew 'vagrant-completion'
 brew 'vim'
 
-mas 'Wunderlist', id: 410628904
-mas 'Monosnap', id: 540348655
-mas 'Yandex.Disk', id: 560459030
+# Java
+brew 'maven'
+brew 'maven-completion'
+
 mas 'Microsoft Remote Desktop', id: 715768417
+mas 'MONIT', id: 1014850245
+mas 'Monosnap', id: 540348655
+mas 'Wunderlist', id: 410628904
+mas 'Yandex.Disk', id: 560459030
