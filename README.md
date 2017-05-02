@@ -41,4 +41,5 @@ System wide MySQL:
 $ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<password> -d mysql:5.6
 $ docker run --name mariadb -p 3307:3306 -e MYSQL_ROOT_PASSWORD=<password> -d mariadb:10.1
 $ docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=<password> -d postgres
+$ docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<password>' -p 1433:1433 --name mssql -d microsoft/mssql-server-linux
 ```
