@@ -11,10 +11,7 @@ Install [brew](http://brew.sh) and run below setup routine.
 
 ## Docker
 
- * `$ docker-machine create default --driver virtualbox`
- * `$ docker-machine stop default`
- * `$ VBoxManage modifyvm default --memory 4096`
- * `$ docker-machine start default`
+ * `$ docker-machine create default --driver virtualbox --virtualbox-memory 4096 # --virtualbox-disk-size 32768`
  * `$ eval $(docker-machine env default)`
  * `$ docker-machine-nfs default`
 
