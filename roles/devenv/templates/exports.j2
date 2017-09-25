@@ -1,10 +1,4 @@
 
-# Docker
-export DOCKER_HOST=tcp://{{ devenv_docker_ip }}:{{ devenv_docker_port }}
-export DOCKER_MACHINE_NAME={{ devenv_docker_name }}
-export DOCKER_TLS_VERIFY=1
-export DOCKER_CERT_PATH=/Users/{{ devenv_user }}/.docker/machine/machines/{{ devenv_docker_name }}
-
 export GITHUB_API_TOKEN={{ devenv_github_api_token }}
 export HOMEBREW_GITHUB_API_TOKEN={{ devenv_homebrew_github_api_token }}
 

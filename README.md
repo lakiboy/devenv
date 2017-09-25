@@ -9,7 +9,7 @@ Install [brew](http://brew.sh) and run below setup routine.
  * `$ brew tap homebrew/bundle`
  * `$ brew bundle`
 
-## Docker
+## Docker sync
 
  * `$ gem install docker-sync`
 

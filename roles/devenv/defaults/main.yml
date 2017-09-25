@@ -1,16 +1,11 @@
 ---
 
-devenv_docker_ip:   192.168.99.100
-devenv_docker_port: 2376
-devenv_docker_name: default
-
 devenv_spotlight_exclusions:
   - "/Users/{{ devenv_user }}/.docker"
   - "/Users/{{ devenv_user }}/Projects"
-  - "/Users/{{ devenv_user }}/VirtualBox VMs"
+  - "/Users/{{ devenv_user }}/VirtualBox"
 
 devenv_change_machine_name: false
 
 devenv_dnsmasq_hosts:
-  - { domain: dev, ip: 127.0.0.1 }
-  - { domain: docker, ip: "{{ devenv_docker_ip }}" }
+  - { domain: docker, ip: 127.0.0.1 }
