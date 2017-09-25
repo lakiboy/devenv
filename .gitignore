@@ -3,3 +3,4 @@
 /dotfiles/exports
 /dotfiles/iterm2
 /setup.yml
+*.retry

@@ -1,6 +1,4 @@
 ---
 
-#- name: Tools | Capifony | Install
-#  gem: name=capifony user_install=no
-#  become: yes
-#  become_method: sudo
+- name: Tools | Docker-sync | Install
+  gem: name=docker-sync user_install=no
