@@ -26,6 +26,7 @@ cask 'steam'
 cask 'synology-cloud-station-drive'
 cask 'teamviewer'
 cask 'telegram'
+cask 'tunnelbear'
 cask 'vagrant'
 cask 'vagrant-manager'
 cask 'virtualbox'
@@ -38,6 +39,7 @@ cask 'java'
 cask 'intellij-idea-ce'
 cask 'jd-gui'
 
+tap 'ethereum/ethereum'
 tap 'homebrew/bundle'
 tap 'homebrew/completions'
 tap 'thoughtbot/formulae'
@@ -45,9 +47,11 @@ tap 'paritytech/paritytech'
 
 brew 'ansible'
 brew 'bash-completion'
+brew 'bitcoin'
 brew 'csvfix'
 brew 'curl'
 brew 'dnsmasq'
+brew 'geth'
 brew 'git'
 brew 'git-flow'
 brew 'go'
@@ -59,6 +63,7 @@ brew 'pgcli'
 brew 'pgloader'
 brew 'rcm'
 brew 's3cmd'
+brew 'solidity'
 brew 'ssh-copy-id'
 brew 'vagrant-completion'
 brew 'vim'
@@ -69,6 +74,7 @@ brew 'maven-completion'
 
 mas 'CoinBar', id: 957162288
 mas 'feedly', id: 865500966
+mas 'Kindle', id: 405399194
 mas 'Microsoft Remote Desktop', id: 715768417
 mas 'MONIT', id: 1014850245
 mas 'Monosnap', id: 540348655
