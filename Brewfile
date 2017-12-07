@@ -12,6 +12,7 @@ cask 'diffmerge'
 cask 'docker'
 cask 'dropbox'
 cask 'evernote'
+cask 'firefox'
 cask 'google-chrome'
 cask 'iterm2'
 cask 'launchrocket'
@@ -72,10 +73,11 @@ brew 'vim'
 brew 'maven'
 brew 'maven-completion'
 
-mas 'CoinBar', id: 957162288
+mas 'Coin Tick - Menu Bar Crypto', id: 1141688067
 mas 'feedly', id: 865500966
 mas 'Kindle', id: 405399194
 mas 'Microsoft Remote Desktop', id: 715768417
 mas 'MONIT', id: 1014850245
 mas 'Monosnap', id: 540348655
+mas 'Tweetbot for Twitter', id: 557168941
 mas 'Wunderlist', id: 410628904
