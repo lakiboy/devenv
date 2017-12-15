@@ -1,10 +1,10 @@
 ---
 
-- include: dotfiles.yml
+- import_tasks: dotfiles.yml
 
-- include: osx.yml
+- include_tasks: osx.yml
   when: devenv_osx_updates
 
-- include: services.yml
-- include: tools.yml
-# - include: docker.yml
+- import_tasks: services.yml
+- import_tasks: tools.yml
+# - import_tasks: docker.yml
