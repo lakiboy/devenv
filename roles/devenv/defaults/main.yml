@@ -1,7 +1,6 @@
 ---
 
 devenv_spotlight_exclusions:
-  - "/Users/{{ devenv_user }}/.docker"
   - "/Users/{{ devenv_user }}/Projects"
   - "/Users/{{ devenv_user }}/VirtualBox"
 

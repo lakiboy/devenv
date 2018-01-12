@@ -1,5 +1,6 @@
 tap 'caskroom/cask'
 tap 'caskroom/versions'
+tap 'caskroom/drivers'
 
 cask '1password'
 cask 'alfred'
@@ -24,7 +25,7 @@ cask 'skype'
 cask 'slack'
 cask 'spotify'
 cask 'steam'
-cask 'synology-cloud-station-drive'
+cask 'synology-drive'
 cask 'teamviewer'
 cask 'telegram'
 cask 'tunnelbear'
@@ -37,8 +38,8 @@ cask 'xld'
 
 # Java
 cask 'java'
-cask 'intellij-idea-ce'
-cask 'jd-gui'
+# cask 'intellij-idea-ce'
+# cask 'jd-gui'
 
 tap 'ethereum/ethereum'
 tap 'homebrew/bundle'
@@ -59,7 +60,7 @@ brew 'go'
 brew 'gnu-sed'
 brew 'jsonpp'
 brew 'mas'
-brew 'parity'
+brew 'paritytech/paritytech/parity'
 brew 'pgcli'
 brew 'pgloader'
 brew 'rcm'
@@ -70,8 +71,8 @@ brew 'vagrant-completion'
 brew 'vim'
 
 # Java
-brew 'maven'
-brew 'maven-completion'
+# brew 'maven'
+# brew 'maven-completion'
 
 mas 'Coin Tick - Menu Bar Crypto', id: 1141688067
 mas 'feedly', id: 865500966
