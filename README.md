@@ -35,6 +35,7 @@ System wide services:
 $ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<password> --restart always -d mysql:5.7
 $ docker run --name mariadb -p 3307:3306 -e MYSQL_ROOT_PASSWORD=<password> --restart always -d mariadb:10.1
 $ docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=<password> --restart always -d postgres
+$ docker run --name mongo -p 27017:27017 --restart always -d mongo:3.6
 $ docker run --name elasticsearch -p 9200:9200 -e 'xpack.security.enabled=false' -e 'xpack.monitoring.enabled=false' --restart always -d docker.elastic.co/elasticsearch/elasticsearch:5.6.0
 $ docker run --name consul -p 8500:8500 -e VIRTUAL_HOST=consul.docker -e VIRTUAL_PORT=8500 --restart always -d consul
 ```
