@@ -63,6 +63,7 @@ brew 'go'
 brew 'gnu-sed'
 brew 'jsonpp'
 brew 'mas'
+brew 'node'
 brew 'paritytech/paritytech/parity'
 brew 'pgcli'
 brew 'pgloader'
@@ -84,4 +85,5 @@ mas 'Microsoft Remote Desktop', id: 715768417
 mas 'MONIT', id: 1014850245
 mas 'Monosnap', id: 540348655
 mas 'Tweetbot for Twitter', id: 557168941
+mas 'Twitterrific 5 for Twitter', id: 1289378661
 mas 'Wunderlist', id: 410628904
