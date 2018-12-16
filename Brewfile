@@ -1,6 +1,4 @@
 tap 'caskroom/cask'
-tap 'caskroom/versions'
-tap 'caskroom/drivers'
 
 cask '1password'
 cask 'alfred'
