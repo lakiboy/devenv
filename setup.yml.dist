@@ -8,7 +8,7 @@
 
     # Git
     devenv_git_user_name:  Dmitri Lakachauskis
-    devenv_git_user_email: lakiboy83@gmail.com
+    devenv_git_user_email: d@dmitri.io
 
     # Github
     devenv_github_api_token:          ~
@@ -20,8 +20,8 @@
       - "/Users/{{ devenv_user }}/Projects/ansible/roles"
 
     # Options
-    devenv_osx_updates:             true
-    devenv_osx_change_machine_name: true
+    devenv_osx_updates:             false
+    devenv_osx_change_machine_name: false
 
   roles:
     - devenv
