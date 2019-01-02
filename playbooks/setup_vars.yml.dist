@@ -1,0 +1,19 @@
+---
+
+# Run `whoami` in console
+devenv_user:   lakiboy
+devenv_locale: en_US.UTF-8
+
+# Git
+devenv_git_user_name:  Dmitri Lakachauskis
+devenv_git_user_email: d@dmitri.io
+
+# Github - https://github.com/settings/tokens
+devenv_docker_github_api_token:   ~
+devenv_homebrew_github_api_token: ~
+
+devenv_ansible_role_paths:
+  - "/Users/{{ devenv_user }}/.ansible/roles"
+
+devenv_dnsmasq_hosts:
+  - { domain: docker, ip: 127.0.0.1 }

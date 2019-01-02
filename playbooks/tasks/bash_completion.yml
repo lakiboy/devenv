@@ -1,0 +1,11 @@
+---
+
+- name: Bash completion | Docker
+  file:
+    src: '/Applications/Docker.app/Contents/Resources/etc/{{ item }}.bash-completion'
+    dest: '/usr/local/etc/bash_completion.d/{{ item }}'
+    state: link
+  with_items:
+    - docker
+    - docker-machine
+    - docker-compose

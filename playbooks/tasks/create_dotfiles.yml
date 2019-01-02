@@ -1,0 +1,14 @@
+---
+
+- name: Dotfiles | Copy templates
+  template: src='{{ item }}' dest='{{ playbook_dir }}/../dotfiles/{{ item }}' owner='{{ devenv_user }}' mode=0644
+  with_items:
+    - exports
+    - gitconfig
+    - ansible.cfg
+
+- name: Dotfiles | iTerm2 shell integration
+  get_url:
+    url: https://iterm2.com/misc/bash_startup.in
+    dest: '{{ playbook_dir }}/../dotfiles/iterm2'
+    mode: 0755

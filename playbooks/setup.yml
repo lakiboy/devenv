@@ -1,0 +1,14 @@
+---
+
+- hosts: devmachine
+
+  tasks:
+    - import_tasks: tasks/create_dotfiles.yml
+    - import_tasks: tasks/bash_completion.yml
+    - import_tasks: tasks/setup_dnsmasq.yml
+
+    - name: Install docker-sync
+      gem: name=docker-sync user_install=no
+
+  vars_files:
+    - setup_vars.yml

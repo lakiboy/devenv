@@ -1,6 +1,5 @@
 /dotfiles/ansible.cfg
-/dotfiles/gitconfig
 /dotfiles/exports
+/dotfiles/gitconfig
 /dotfiles/iterm2
-/setup.yml
 *.retry

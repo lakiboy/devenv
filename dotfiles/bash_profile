@@ -1,4 +1,5 @@
 export PATH="/usr/local/sbin:$PATH"
+export PROMPT_COMMAND='if [ -d .git ]; then echo -e "\033[32m$(parse_git_branch)\033[00m"; fi'
 
 parse_git_branch() {
     git branch | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'

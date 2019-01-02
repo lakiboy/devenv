@@ -1,4 +1,0 @@
----
-
-- name: Tools | Docker-sync | Install
-  gem: name=docker-sync user_install=no
