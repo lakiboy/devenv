@@ -15,6 +15,7 @@ cask 'diffmerge'
 cask 'docker'
 cask 'dropbox'
 cask 'evernote'
+cask 'fantastical'
 cask 'firefox'
 cask 'google-chrome'
 cask 'iterm2'
@@ -56,10 +57,10 @@ brew 's3cmd'
 brew 'ssh-copy-id'
 brew 'vagrant-completion'
 
-mas 'Coin Tick - Menu Bar Crypto', id: 1141688067
+mas 'Coin Tick', id: 1141688067
 mas 'feedly', id: 865500966
 mas 'Kindle', id: 405399194
-mas 'MONIT', id: 1014850245
+mas 'Monit', id: 1014850245
 mas 'Monosnap', id: 540348655
 mas 'Twitterrific 5 for Twitter', id: 1289378661
 mas 'Wunderlist', id: 410628904
