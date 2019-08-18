@@ -43,6 +43,8 @@ Link generated dotfiles to home directory:
 $ rcup -d dotfiles
 ```
 
+Start new bash session e.g. open new tab in a terminal in order newly generated dotfiles to become effective.
+
 #### Services
 
 Run _Dnsmasq_:
@@ -55,4 +57,10 @@ Test DNS is working:
 
 ```bash
 $ ping anything.docker
+```
+
+If above command fails, then try to flush _DNS_ cache first:
+
+```bash
+$ sudo killall -HUP mDNSResponder
 ```

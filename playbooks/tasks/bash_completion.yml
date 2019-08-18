@@ -9,3 +9,10 @@
     - docker
     - docker-machine
     - docker-compose
+
+- name: Bash completion | Kubernetes
+  copy: dest='/usr/local/etc/bash_completion.d/{{ item }}' content="{{ lookup('pipe', item ~ ' completion bash') }}" # $(brew --prefix)
+  with_items:
+    - kubectl
+    - minikube
+    - helm

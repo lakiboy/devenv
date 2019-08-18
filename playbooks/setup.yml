@@ -4,11 +4,24 @@
 
   tasks:
     - import_tasks: tasks/create_dotfiles.yml
+    - import_tasks: tasks/install_packages.yml
+    - import_tasks: tasks/configure_packages.yml
     - import_tasks: tasks/bash_completion.yml
     - import_tasks: tasks/setup_dnsmasq.yml
 
-    - name: Install docker-sync
-      gem: name=docker-sync user_install=no
+  vars:
+    devenv_ansible_role_paths:
+      - "/Users/{{ devenv_user }}/.ansible/roles"
+
+    devenv_dnsmasq_hosts:
+      - { domain: docker, ip: 127.0.0.1 }
+
+    devenv_goss_version: v0.3.6
+
+    # Postgres CLI
+    devenv_pg_host: 127.0.0.1
+    devenv_pg_user: dev
+    devenv_pg_pass: dev
 
   vars_files:
     - setup_vars.yml

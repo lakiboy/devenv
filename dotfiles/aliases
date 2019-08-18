@@ -19,4 +19,7 @@ colorflag="-G"
 alias ll="ls -lhF ${colorflag}"
 alias la="ls -lhaF ${colorflag}"
 
-alias sed=gsed
+# Docker
+alias d="docker"
+alias dc="docker-compose"
+alias ds="docker-sync"

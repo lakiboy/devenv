@@ -1,0 +1,7 @@
+---
+
+- name: Configure | Add fish to shells
+  lineinfile:
+    path: /etc/shells
+    line: "{{ lookup('pipe', 'which fish') }}"
+  become: yes

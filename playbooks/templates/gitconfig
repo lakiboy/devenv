@@ -10,7 +10,18 @@
     co = checkout
     aa = add --all
     st = status -s
+    lo = log --oneline
 
 [core]
     excludesfile = ~/.gitignore
     whitespace=cr-at-eol
+
+# Push easily - http://stackoverflow.com/a/23918418/89484
+[push]
+    default = current
+
+# https://github.com/pstadler/keybase-gpg-github
+{% if devenv_git_gpg_sign %}
+[commit]
+    gpgsign = true
+{% endif %}
