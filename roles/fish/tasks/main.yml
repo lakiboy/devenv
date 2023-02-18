@@ -11,3 +11,9 @@
     dest: "{{ ansible_user_dir }}/.config/fish/functions"
     state: directory
     mode: "0755"
+
+- name: Change default shell to fish.
+  ansible.builtin.user:
+    name: "{{ fish_user }}"
+    shell: "{{ lookup('pipe', 'which fish') }}"
+  become: true

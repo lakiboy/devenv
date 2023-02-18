@@ -1,17 +1,18 @@
 ---
 
-- hosts: local
+- name: Configure basic OSX software.
+  hosts: local
 
   vars:
-    git_user_name:  Dmitrijs Lakacauskis
+    git_user_name: Dmitrijs Lakacauskis
     git_user_email: d@dmitrijs.io
 
   roles:
-    - role: ../roles/dotfiles
+    - role: dotfiles
       tags: [dotfiles]
 
-    - role: ../roles/fish
+    - role: fish
       tags: [fish]
 
-    - role: ../roles/git
+    - role: git
       tags: [git]

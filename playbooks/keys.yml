@@ -1,6 +1,7 @@
 ---
 
-- hosts: local
+- name: Prepare SSH keys for the machine.
+  hosts: local
 
   tasks:
     - name: Ensure .secrets directory exists.
