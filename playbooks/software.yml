@@ -10,6 +10,7 @@
       # - homebrew/cask
       - homebrew/cask-drivers
       - homebrew/cask-versions
+      - homebrew/services
 
     homebrew_cask_apps:
       - 1password
@@ -46,6 +47,7 @@
       - gnu-sed
       - make
       - mas
+      - postgresql@15
       - pgcli
       - shellcheck
       - ssh-copy-id

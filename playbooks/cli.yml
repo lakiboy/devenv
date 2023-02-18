@@ -4,9 +4,15 @@
   hosts: local
 
   vars:
+    homebrew_taps: []
     git_user_name: Dmitrijs Lakacauskis
     git_user_email: d@dmitrijs.io
-    homebrew_taps: []
+    fish_exports:
+      GPG_TTY: "(tty)"
+      LANG: "en_US.UTF-8"
+      PGHOST: 127.0.0.1
+      PGUSER: dev
+      PGPASSWORD: dev
 
   roles:
     - role: geerlingguy.mac.homebrew
