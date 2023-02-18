@@ -1,5 +1,7 @@
 # devenv
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/lakiboy/devenv/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/lakiboy/devenv/tree/master)
+
 My OSX development environment.
 
 ## Requirements
