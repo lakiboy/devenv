@@ -1,6 +1,6 @@
 ---
 
-- name: Configure basic OSX software.
+- name: Basic CLI config.
   hosts: local
 
   vars:

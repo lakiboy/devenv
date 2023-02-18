@@ -4,6 +4,14 @@ My OSX development environment.
 
 ## Requirements
 
+#### Apple CLI tools
+
+Launch the installer:
+
+```bash
+xcode-select --install
+```
+
 #### Brew
 
 Install [brew](http://brew.sh).

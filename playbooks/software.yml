@@ -1,0 +1,67 @@
+---
+
+- name: Install software.
+  hosts: local
+
+  vars:
+    homebrew_taps:
+      - buo/cask-upgrade
+      # - homebrew/core
+      # - homebrew/cask
+      - homebrew/cask-drivers
+      - homebrew/cask-versions
+
+    homebrew_cask_apps:
+      - 1password
+      - alfred
+      - appcleaner
+      - authy
+      - cyberduck
+      - diffmerge
+      - dropbox
+      - firefox
+      - github
+      - google-chrome
+      - gpg-suite
+      - iterm2
+      - jetbrains-toolbox
+      - ngrok
+      - spotify
+      - synology-drive
+      - temurin
+      - temurin17
+      - visual-studio-code
+      - vlc
+      - zoom
+
+    homebrew_installed_packages:
+      - ansible
+      - ansible-lint
+      - awscli
+      - circleci
+      - colima
+      - curl
+      - fish
+      - git
+      - gnu-sed
+      - make
+      - mas
+      - pgcli
+      - shellcheck
+      - ssh-copy-id
+
+    mas_installed_apps:
+      - { id: 406056744, name: "Evernote" }
+      - { id: 1274495053, name: "Microsoft To Do" }
+      - { id: 540348655, name: "Monosnap" }
+      - { id: 1289583905, name: "Pixelmator Pro" }
+      - { id: 803453959, name: "Slack for Desktop" }
+      - { id: 1508732804, name: "Soulver 3" }
+      - { id: 747648890, name: "Telegram" }
+      - { id: 1147396723, name: "WhatsApp" }
+
+  roles:
+    - role: geerlingguy.mac.homebrew
+      tags: [homebrew]
+    - role: geerlingguy.mac.mas
+      tags: [mas]
