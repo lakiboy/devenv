@@ -1,0 +1,10 @@
+jobs:
+  build:
+    resource_class: small
+    docker:
+      - image: cimg/python:3.11.2
+    steps:
+      - checkout
+      - run: pip install ansible ansible-lint
+      - run: ansible-lint --version
+      - run: ansible-lint .
