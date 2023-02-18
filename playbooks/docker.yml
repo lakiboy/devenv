@@ -1,0 +1,13 @@
+---
+
+- name: Manage Docker runtime.
+  hosts: local
+
+  vars:
+    colima_cpu: 4
+    colima_memory: 12
+    colima_disk: 64
+
+  roles:
+    - role: colima
+      tags: [docker]

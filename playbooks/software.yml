@@ -42,6 +42,7 @@
       - circleci
       - colima
       - curl
+      - docker
       - fish
       - git
       - gnu-sed

@@ -1,0 +1,22 @@
+---
+
+- name: List colima instances.
+  ansible.builtin.command: colima list --json
+  register: colima_instances_result
+  changed_when: false
+
+- name: Format instances.
+  ansible.builtin.set_fact:
+    colima_instances: "{{ colima_instances_result.stdout | default('{}', true) | from_json }}"
+
+- name: Start new instance.
+  ansible.builtin.command: "colima start --cpu {{ colima_cpu }} --memory {{ colima_memory }} --disk {{ colima_disk }}"
+  when: "colima_instances.status is not defined"
+  register: colima_start_result
+  changed_when: colima_start_result.rc != 0
+
+- name: Run existing stopped instance.
+  ansible.builtin.command: colima start
+  when: "colima_instances.status | default == 'Stopped'"
+  register: colima_start_result
+  changed_when: colima_start_result.rc != 0
