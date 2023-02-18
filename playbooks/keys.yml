@@ -3,6 +3,12 @@
 - hosts: local
 
   tasks:
+    - name: Ensure .secrets directory exists.
+      ansible.builtin.file:
+        dest: "{{ playbook_dir }}/../.secrets"
+        state: directory
+        mode: "0700"
+
     - name: Generate an OpenSSH keypair.
       community.crypto.openssh_keypair:
         path: "{{ playbook_dir }}/../.secrets/id_rsa"
