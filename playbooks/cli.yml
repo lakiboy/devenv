@@ -6,13 +6,13 @@
   vars:
     git_user_name: Dmitrijs Lakacauskis
     git_user_email: d@dmitrijs.io
+    homebrew_taps: []
 
   roles:
+    - role: geerlingguy.mac.homebrew
     - role: dotfiles
       tags: [dotfiles]
-
     - role: fish
       tags: [fish]
-
     - role: git
       tags: [git]

@@ -17,3 +17,9 @@
     name: "{{ fish_user }}"
     shell: "{{ lookup('pipe', 'which fish') }}"
   become: true
+
+- name: Place fish config.
+  ansible.builtin.template:
+    src: config.fish
+    dest: "{{ fish_config_file }}"
+    mode: "0644"
