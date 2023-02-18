@@ -26,7 +26,10 @@
       - gpg-suite
       - iterm2
       - jetbrains-toolbox
+      - microsoft-teams
       - ngrok
+      - poedit
+      - raspberry-pi-imager
       - spotify
       - synology-drive
       - temurin
