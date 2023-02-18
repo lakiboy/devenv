@@ -1,0 +1,4 @@
+---
+
+fish_user: "{{ ansible_user_id }}"
+fish_config_file: "{{ ansible_user_dir }}/.config/fish/config.fish"

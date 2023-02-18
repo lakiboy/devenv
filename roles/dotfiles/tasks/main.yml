@@ -1,0 +1,10 @@
+---
+
+- name: Copy dotfiles in place.
+  ansible.builtin.copy:
+    src: "{{ item }}"
+    dest: "{{ ansible_user_dir }}/{{ item }}"
+    mode: "0644"
+  loop:
+    - .editorconfig
+    - .vimrc

@@ -1,0 +1,17 @@
+---
+
+- hosts: local
+
+  vars:
+    git_user_name:  Dmitrijs Lakacauskis
+    git_user_email: d@dmitrijs.io
+
+  roles:
+    - role: ../roles/dotfiles
+      tags: [dotfiles]
+
+    - role: ../roles/fish
+      tags: [fish]
+
+    - role: ../roles/git
+      tags: [git]

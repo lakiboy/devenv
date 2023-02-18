@@ -1,90 +1,50 @@
-tap 'caskroom/cask'
 tap 'buo/cask-upgrade'
-tap 'homebrew/cask-drivers'
-tap 'thoughtbot/formulae'
+tap 'homebrew/cask-versions'
 
 cask '1password'
 cask 'alfred'
 cask 'appcleaner'
-cask 'atom'
 cask 'authy'
-cask 'ccmenu'
 cask 'cyberduck'
-cask 'dash'
 cask 'diffmerge'
-cask 'docker'
 cask 'dropbox'
-cask 'evernote'
-cask 'fantastical'
 cask 'firefox'
 cask 'github'
 cask 'google-chrome'
 cask 'gpg-suite'
 cask 'iterm2'
-cask 'java'
 cask 'jetbrains-toolbox'
-cask 'keybase'
-cask 'minikube'
 cask 'ngrok'
-cask 'postman'
-cask 'sequel-pro'
-cask 'slack'
 cask 'spotify'
-cask 'steam'
 cask 'synology-drive'
-cask 'tableplus'
-cask 'telegram'
-cask 'tunnelblick'
-cask 'vagrant'
-cask 'vagrant-manager'
-cask 'virtualbox'
+cask 'temurin'
+cask 'temurin17'
 cask 'visual-studio-code'
 cask 'vlc'
-cask 'whatsapp'
-cask 'xld'
-cask 'zoomus'
+cask 'zoom'
 
 brew 'ansible'
-brew 'aws-iam-authenticator'
+brew 'ansible-lint'
 brew 'awscli'
-brew 'bash-completion'
-brew 'bfg'
 brew 'circleci'
-brew 'csvfix'
+brew 'colima'
 brew 'curl'
-brew 'dnsmasq'
 brew 'fish'
 brew 'git'
-brew 'git-flow'
-brew 'go'
 brew 'gnu-sed'
-brew 'gpg'
-brew 'graphviz'
-brew 'jsonpp'
-brew 'kotlin'
-brew 'kubectx'
-brew 'kubernetes-helm'
 brew 'make'
 brew 'mas'
-brew 'php'
 brew 'pgcli'
-brew 'postgresql'
-brew 'pre-commit'
-brew 'rcm'
-brew 'rust'
-brew 'rustc-completion'
-brew 's3cmd'
 brew 'shellcheck'
 brew 'ssh-copy-id'
-brew 'terraform'
-brew 'tig'
-brew 'vagrant-completion'
 
-mas 'Coin Tick', id: 1141688067
-mas 'Feedly', id: 865500966
-mas 'Kindle', id: 405399194
-mas 'Monit', id: 1014850245
+mas 'Evernote', id: 406056744
+mas 'Microsoft To Do', id: 1274495053
 mas 'Monosnap', id: 540348655
-mas 'OttPlayer', id: 1306611194
-mas 'Twitterrific', id: 1289378661
-mas 'Wunderlist', id: 410628904
+mas 'Pixelmator Pro', id: 1289583905
+mas 'Slack for Desktop', id: 803453959
+mas 'Soulver 3', id: 1508732804
+mas 'Telegram', id: 747648890
+mas 'WhatsApp', id: 1147396723
+
+# https://github.com/Homebrew/homebrew-bundle/issues/1170

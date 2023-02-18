@@ -4,12 +4,6 @@
 devenv_user:   lakiboy
 devenv_locale: en_US.UTF-8
 
-# Git
-devenv_git_user_name:  Dmitri Lakachauskis
-devenv_git_user_email: d@dmitri.io
-devenv_git_gpg_sign:   false
-devenv_git_gpg_key:    ~
-
 # Github - https://github.com/settings/tokens
 devenv_docker_github_api_token:   ~
 devenv_homebrew_github_api_token: ~

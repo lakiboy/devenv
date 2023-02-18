@@ -1,0 +1,17 @@
+---
+
+- name: Add static git dotfiles.
+  ansible.builtin.copy:
+    src: "{{ item }}"
+    dest: "{{ ansible_user_dir }}/{{ item }}"
+    mode: "0644"
+  loop:
+    - .gitignore
+
+- name: Add dynamic git dotfiles.
+  ansible.builtin.template:
+    src: "{{ item }}"
+    dest: "{{ ansible_user_dir }}/{{ item }}"
+    mode: "0644"
+  loop:
+    - .gitconfig

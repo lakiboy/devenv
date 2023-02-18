@@ -1,5 +1,1 @@
-/dotfiles/ansible.cfg
-/dotfiles/exports
-/dotfiles/gitconfig
-/dotfiles/iterm2
-*.retry
+/.secrets

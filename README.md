@@ -2,65 +2,22 @@
 
 My OSX development environment.
 
-## Installation
+## Requirements
 
-First install [brew](http://brew.sh) and review the [Brewfile](Brewfile).
+#### Brew
 
-#### Software
+Install [brew](http://brew.sh).
 
-Run the following:
+#### Ansible
+
+Install ansible:
 
 ```bash
-$ brew tap homebrew/bundle
-$ brew bundle
+brew install ansible
 ```
 
-#### SSH
-
-Generate new key (easier without the passphrase):
+Download dependencies (optional):
 
 ```bash
-$ ssh-keygen -t rsa
-```
-
-#### Configure
-
-Copy setup variables and adjust values:
-
-```bash
-$ cp playbooks/setup_vars.yml.dist playbooks/setup_vars.yml
-```
-
-Run the playbook:
-
-```bash
-$ ansible-playbook --ask-become-pass -i playbooks/hosts playbooks/setup.yml
-```
-
-Link generated dotfiles to home directory:
-
-```bash
-$ rcup -d dotfiles
-```
-
-Start new bash session e.g. open new tab in a terminal in order newly generated dotfiles to become effective.
-
-#### Services
-
-Run _Dnsmasq_:
-
-```bash
-$ sudo brew services start dnsmasq
-```
-
-Test DNS is working:
-
-```bash
-$ ping anything.docker
-```
-
-If above command fails, then try to flush _DNS_ cache first:
-
-```bash
-$ sudo killall -HUP mDNSResponder
+ansible-galaxy install -r requirements.yml
 ```

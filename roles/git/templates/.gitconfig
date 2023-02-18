@@ -1,6 +1,6 @@
 [user]
-    name = {{ devenv_git_user_name }}
-    email = {{ devenv_git_user_email }}
+    name = {{ git_user_name | mandatory }}
+    email = {{ git_user_email | mandatory }}
 
 [color]
     ui = auto
@@ -21,7 +21,8 @@
     default = current
 
 # https://github.com/pstadler/keybase-gpg-github
-{% if devenv_git_gpg_sign %}
 [commit]
     gpgsign = true
-{% endif %}
+
+[pull]
+    rebase = false

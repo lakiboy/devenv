@@ -1,0 +1,13 @@
+---
+
+- name: Add fish to shells
+  ansible.builtin.lineinfile:
+    path: /etc/shells
+    line: "{{ lookup('pipe', 'which fish') }}"
+  become: true
+
+- name: Ensure fish shell functions directory exists.
+  ansible.builtin.file:
+    dest: "{{ ansible_user_dir }}/.config/fish/functions"
+    state: directory
+    mode: "0755"
