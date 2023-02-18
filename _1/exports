@@ -1,9 +1,0 @@
-export DOCKER_GITHUB_API_TOKEN={{ devenv_docker_github_api_token }}
-export HOMEBREW_GITHUB_API_TOKEN={{ devenv_homebrew_github_api_token }}
-export LANG={{ devenv_locale }}
-
-export PGHOST={{ devenv_pg_host }}
-export PGUSER={{ devenv_pg_user }}
-export PGPASSWORD={{ devenv_pg_pass }}
-
-export GPG_TTY=$(tty)

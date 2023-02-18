@@ -1,6 +1,6 @@
 ---
 
-- name: Add fish to shells
+- name: Add fish to shells.
   ansible.builtin.lineinfile:
     path: /etc/shells
     line: "{{ lookup('pipe', 'which fish') }}"

@@ -1,9 +1,0 @@
----
-
-# Run `whoami` in console
-devenv_user:   lakiboy
-devenv_locale: en_US.UTF-8
-
-# Github - https://github.com/settings/tokens
-devenv_docker_github_api_token:   ~
-devenv_homebrew_github_api_token: ~
