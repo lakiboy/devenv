@@ -13,10 +13,10 @@
   ansible.builtin.command: "colima start --cpu {{ colima_cpu }} --memory {{ colima_memory }} --disk {{ colima_disk }}"
   when: "colima_instances.status is not defined"
   register: colima_start_result
-  changed_when: colima_start_result.rc != 0
+  changed_when: colima_start_result.rc == 0
 
 - name: Run existing stopped instance.
   ansible.builtin.command: colima start
   when: "colima_instances.status | default == 'Stopped'"
   register: colima_start_result
-  changed_when: colima_start_result.rc != 0
+  changed_when: colima_start_result.rc == 0

@@ -52,7 +52,7 @@ Generate _SSH_ key:
 ansible-playbook playbooks/keys.yml
 ```
 
-Run Docker:
+Run _Docker_:
 
 ```bash
 ansible-playbook playbooks/docker.yml
