@@ -8,16 +8,16 @@
 
   pre_tasks:
     - name: Include custom configuration.
-      include_vars: "{{ item }}"
+      ansible.builtin.include_vars: "{{ item }}"
       with_fileglob:
         - ../config.yml
 
   roles:
     - role: geerlingguy.mac.homebrew
-      homebrew_taps: [ ]
-      homebrew_cask_apps: [ ]
-      homebrew_installed_packages: [ ]
-      mas_installed_apps: [ ]
+      homebrew_taps: []
+      homebrew_cask_apps: []
+      homebrew_installed_packages: []
+      mas_installed_apps: []
 
     - role: dotfiles
       tags: [dotfiles]
