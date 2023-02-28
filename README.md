@@ -32,6 +32,16 @@ Download dependencies (optional):
 ansible-galaxy install -r requirements.yml
 ```
 
+## Adjust config
+
+You can overwrite default config:
+
+```bash
+cp default.config.yml config.yaml
+```
+
+and keep / adjust only necessary values.
+
 ## Usage
 
 Install software:

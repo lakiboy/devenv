@@ -1,0 +1,77 @@
+---
+
+git_user_name: Dmitrijs Lakacauskis
+git_user_email: d@dmitrijs.io
+
+fish_exports:
+  GPG_TTY: "(tty)"
+  LANG: "en_US.UTF-8"
+  PGHOST: 127.0.0.1
+  PGUSER: dev
+  PGPASSWORD: dev
+
+colima_cpu: 4
+colima_memory: 12
+colima_disk: 64
+
+homebrew_taps:
+  - buo/cask-upgrade
+  # - homebrew/core
+  # - homebrew/cask
+  - homebrew/cask-drivers
+  - homebrew/cask-versions
+  - homebrew/services
+
+homebrew_cask_apps:
+  - 1password
+  - alfred
+  - appcleaner
+  - authy
+  - cyberduck
+  - diffmerge
+  - dropbox
+  - firefox
+  - github
+  - google-chrome
+  - gpg-suite
+  - iterm2
+  - jetbrains-toolbox
+  - microsoft-teams
+  - ngrok
+  - poedit
+  - raspberry-pi-imager
+  - spotify
+  - temurin
+  - temurin17
+  - visual-studio-code
+  - vlc
+  - zoom
+
+homebrew_installed_packages:
+  - ansible
+  - ansible-lint
+  - awscli
+  - circleci
+  - colima
+  - curl
+  - docker
+  - fish
+  - htop
+  - git
+  - gnu-sed
+  - make
+  - mas
+  - postgresql@15
+  - pgcli
+  - shellcheck
+  - ssh-copy-id
+
+mas_installed_apps:
+  - { id: 406056744, name: "Evernote" }
+  - { id: 1274495053, name: "Microsoft To Do" }
+  - { id: 540348655, name: "Monosnap" }
+  - { id: 1289583905, name: "Pixelmator Pro" }
+  - { id: 803453959, name: "Slack for Desktop" }
+  - { id: 1508732804, name: "Soulver 3" }
+  - { id: 747648890, name: "Telegram" }
+  - { id: 1147396723, name: "WhatsApp" }

@@ -3,19 +3,22 @@
 - name: Basic CLI config.
   hosts: local
 
-  vars:
-    homebrew_taps: []
-    git_user_name: Dmitrijs Lakacauskis
-    git_user_email: d@dmitrijs.io
-    fish_exports:
-      GPG_TTY: "(tty)"
-      LANG: "en_US.UTF-8"
-      PGHOST: 127.0.0.1
-      PGUSER: dev
-      PGPASSWORD: dev
+  vars_files:
+    - ../default.config.yml
+
+  pre_tasks:
+    - name: Include custom configuration.
+      ansible.builtin.include_vars: "{{ item }}"
+      with_fileglob:
+        - ../config.yml
 
   roles:
     - role: geerlingguy.mac.homebrew
+      homebrew_taps: []
+      homebrew_cask_apps: []
+      homebrew_installed_packages: []
+      mas_installed_apps: []
+
     - role: dotfiles
       tags: [dotfiles]
     - role: fish
