@@ -3,10 +3,14 @@
 - name: Manage Docker runtime.
   hosts: local
 
-  vars:
-    colima_cpu: 4
-    colima_memory: 12
-    colima_disk: 64
+  vars_files:
+    - ../default.config.yml
+
+  pre_tasks:
+    - name: Include custom configuration.
+      include_vars: "{{ item }}"
+      with_fileglob:
+        - ../config.yml
 
   roles:
     - role: colima
