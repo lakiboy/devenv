@@ -66,10 +66,12 @@ homebrew_installed_packages:
   - gnu-sed
   - make
   - mas
+  - node
   - postgresql@15
   - pgcli
   - shellcheck
   - ssh-copy-id
+  - yarn
 
 mas_installed_apps:
   - { id: 406056744, name: "Evernote" }
