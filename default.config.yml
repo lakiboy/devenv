@@ -7,8 +7,8 @@ fish_exports:
   GPG_TTY: "(tty)"
   LANG: "en_US.UTF-8"
   PGHOST: 127.0.0.1
-  PGUSER: dev
-  PGPASSWORD: dev
+  PGUSER: admin
+  PGPASSWORD: admin
 
 colima_cpu: 4
 colima_memory: 12
@@ -52,6 +52,7 @@ homebrew_installed_packages:
   - ansible
   - ansible-lint
   - awscli
+  - caddy
   - circleci
   - colima
   - curl
