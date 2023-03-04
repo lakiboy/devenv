@@ -58,6 +58,8 @@ homebrew_installed_packages:
   - curl
   - docker
   - docker-compose
+  - docker-credential-helper
+  - dockerize
   - fish
   - htop
   - git
