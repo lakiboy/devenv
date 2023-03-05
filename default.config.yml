@@ -69,6 +69,7 @@ homebrew_installed_packages:
   - pgcli
   - shellcheck
   - ssh-copy-id
+  - terminal-notifier
   - yarn
 
 mas_installed_apps:
