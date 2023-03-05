@@ -42,8 +42,6 @@ homebrew_cask_apps:
   - poedit
   - raspberry-pi-imager
   - spotify
-  - temurin
-  - temurin17
   - visual-studio-code
   - vlc
   - zoom
