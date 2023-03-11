@@ -26,3 +26,8 @@
 
 [pull]
     rebase = false
+
+{% if github_token is defined %}
+[url "https://{{ github_token }}@github.com/"]
+    insteadOf = https://github.com/
+{% endif %}

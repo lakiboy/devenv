@@ -3,6 +3,8 @@
 git_user_name: Dmitrijs Lakacauskis
 git_user_email: d@dmitrijs.io
 
+github_token: ~
+
 fish_exports:
   GPG_TTY: "(tty)"
   LANG: "en_US.UTF-8"
@@ -71,6 +73,7 @@ homebrew_installed_packages:
   - terminal-notifier
 
 mas_installed_apps:
+  - { id: 640199958, name: "Apple Developer" }
   - { id: 406056744, name: "Evernote" }
   - { id: 1274495053, name: "Microsoft To Do" }
   - { id: 540348655, name: "Monosnap" }
@@ -79,3 +82,4 @@ mas_installed_apps:
   - { id: 1508732804, name: "Soulver 3" }
   - { id: 747648890, name: "Telegram" }
   - { id: 1147396723, name: "WhatsApp" }
+  - { id: 497799835, name: "Xcode" }

@@ -24,3 +24,8 @@ alias dc="docker-compose"
 {% for item in fish_exports | dict2items %}
 set -x {{ item.key }} {{ item.value }}
 {% endfor %}
+
+# GitHub
+set -x HOMEBREW_GITHUB_API_TOKEN {{ github_token | mandatory }}
+set -x GITHUB_TOKEN {{ github_token | mandatory }}
+set -x COMPOSER_AUTH '{"github-oauth": {"github.com": "{{ github_token | mandatory }}"}}'
