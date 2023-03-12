@@ -6,7 +6,6 @@ set -g fish_user_paths "{{ homebrew_prefix }}/bin" "{{ homebrew_prefix }}/sbin" 
 
 # Shortcuts
 alias p="cd ~/Projects"
-alias g="git"
 alias h="history"
 
 # List
