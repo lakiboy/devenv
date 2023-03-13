@@ -61,6 +61,7 @@ homebrew_installed_packages:
   - docker-credential-helper
   - dockerize
   - fish
+  - jq
   - htop
   - git
   - gnu-sed
