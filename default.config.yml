@@ -72,6 +72,7 @@ homebrew_installed_packages:
   - shellcheck
   - ssh-copy-id
   - terminal-notifier
+  - wget
 
 mas_installed_apps:
   - { id: 640199958, name: "Apple Developer" }
