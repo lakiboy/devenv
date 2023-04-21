@@ -42,6 +42,7 @@ homebrew_cask_apps:
   - microsoft-teams
   - ngrok
   - poedit
+  - proxyman
   - raspberry-pi-imager
   - spotify
   - visual-studio-code
@@ -63,6 +64,7 @@ homebrew_installed_packages:
   - fish
   - jq
   - htop
+  - httpie
   - git
   - gnu-sed
   - make
@@ -71,6 +73,7 @@ homebrew_installed_packages:
   - pgcli
   - shellcheck
   - ssh-copy-id
+  - terraform
   - terminal-notifier
   - wget
 
