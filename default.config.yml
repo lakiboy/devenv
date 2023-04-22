@@ -35,6 +35,7 @@ homebrew_cask_apps:
   - firefox
   - github
   - google-chrome
+  - google-cloud-sdk
   - gpg-suite
   - iterm2
   - jetbrains-toolbox
