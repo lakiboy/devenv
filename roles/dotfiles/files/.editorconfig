@@ -15,3 +15,6 @@ indent_size = 2
 
 [*.{js,ts,tsx,json}]
 indent_size = 2
+
+[*.tf]
+indent_size = 2
