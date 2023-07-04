@@ -83,6 +83,7 @@ homebrew_installed_packages:
 mas_installed_apps:
   - { id: 640199958, name: "Apple Developer" }
   - { id: 406056744, name: "Evernote" }
+  - { id: 1295203466, name: "Microsoft Remote Desktop" }
   - { id: 1274495053, name: "Microsoft To Do" }
   - { id: 540348655, name: "Monosnap" }
   - { id: 1289583905, name: "Pixelmator Pro" }
