@@ -29,6 +29,7 @@ homebrew_cask_apps:
   - 1password
   - alfred
   - appcleaner
+  - arc
   - authy
   - cyberduck
   - diffmerge
