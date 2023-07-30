@@ -18,12 +18,10 @@ colima_disk: 64
 
 homebrew_taps:
   - buo/cask-upgrade
-  # - homebrew/core
-  # - homebrew/cask
-  - homebrew/cask-drivers
   - homebrew/cask-versions
   - homebrew/services
   - hashicorp/tap
+  - teamookla/speedtest
 
 homebrew_cask_apps:
   - 1password
@@ -43,6 +41,7 @@ homebrew_cask_apps:
   - jetbrains-toolbox
   - logi-options-plus
   - microsoft-teams
+  - nordvpn
   - ngrok
   - poedit
   - proxyman
@@ -76,6 +75,7 @@ homebrew_installed_packages:
   - postgresql@15
   - pgcli
   - shellcheck
+  - speedtest
   - ssh-copy-id
   - terraform
   - terminal-notifier
