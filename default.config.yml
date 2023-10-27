@@ -72,13 +72,14 @@ homebrew_installed_packages:
   - gnu-sed
   - make
   - mas
+  - orbstack
   - postgresql@15
-  - pgcli
   - shellcheck
   - speedtest
   - ssh-copy-id
   - terraform
   - terminal-notifier
+  - tilt
   - wget
 
 mas_installed_apps:
