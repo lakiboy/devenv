@@ -18,9 +18,8 @@ colima_disk: 64
 
 homebrew_taps:
   - buo/cask-upgrade
-  - homebrew/cask-versions
-  - homebrew/services
   - hashicorp/tap
+  - homebrew/services
   - teamookla/speedtest
 
 homebrew_cask_apps:
@@ -39,6 +38,7 @@ homebrew_cask_apps:
   - iterm2
   - istat-menus
   - jetbrains-toolbox
+  - karabiner-elements
   - logi-options-plus
   - microsoft-teams
   - obsidian
@@ -67,6 +67,7 @@ homebrew_installed_packages:
   - fish
   - jq
   - hashicorp/tap/waypoint
+  - hashicorp/tap/terraform
   - htop
   - httpie
   - git
