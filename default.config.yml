@@ -28,7 +28,6 @@ homebrew_cask_apps:
   - alfred
   - appcleaner
   - arc
-  - authy
   - cyberduck
   - diffmerge
   - dropbox
@@ -38,9 +37,11 @@ homebrew_cask_apps:
   - google-cloud-sdk
   - gpg-suite
   - iterm2
+  - istat-menus
   - jetbrains-toolbox
   - logi-options-plus
   - microsoft-teams
+  - obsidian
   - nordvpn
   - ngrok
   - poedit
@@ -92,5 +93,5 @@ mas_installed_apps:
   - { id: 803453959, name: "Slack for Desktop" }
   - { id: 1508732804, name: "Soulver 3" }
   - { id: 747648890, name: "Telegram" }
-  - { id: 1147396723, name: "WhatsApp" }
+  - { id: 310633997, name: "WhatsApp Messenger" }
   - { id: 497799835, name: "Xcode" }
