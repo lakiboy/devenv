@@ -47,7 +47,9 @@ homebrew_cask_apps:
   - poedit
   - proxyman
   - raspberry-pi-imager
+  - rocket
   - spotify
+  - vanilla
   - visual-studio-code
   - vlc
   - zoom
@@ -79,13 +81,13 @@ homebrew_installed_packages:
   - shellcheck
   - speedtest
   - ssh-copy-id
-  - terraform
   - terminal-notifier
   - tilt
   - wget
 
 mas_installed_apps:
   - { id: 640199958, name: "Apple Developer" }
+  - { id: 425264550, name: "Blackmagic Disk Speed Test" }
   - { id: 406056744, name: "Evernote" }
   - { id: 1295203466, name: "Microsoft Remote Desktop" }
   - { id: 1274495053, name: "Microsoft To Do" }
