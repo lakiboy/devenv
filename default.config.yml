@@ -95,6 +95,7 @@ mas_installed_apps:
   - { id: 1289583905, name: "Pixelmator Pro" }
   - { id: 803453959, name: "Slack for Desktop" }
   - { id: 1508732804, name: "Soulver 3" }
+  - { id: 1545870783, name: "System Color Picker" }
   - { id: 747648890, name: "Telegram" }
   - { id: 310633997, name: "WhatsApp Messenger" }
   - { id: 497799835, name: "Xcode" }
