@@ -19,7 +19,6 @@ colima_disk: 64
 homebrew_taps:
   - buo/cask-upgrade
   - hashicorp/tap
-  - homebrew/services
   - teamookla/speedtest
 
 homebrew_cask_apps:
