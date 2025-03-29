@@ -19,7 +19,6 @@ colima_disk: 64
 homebrew_taps:
   - buo/cask-upgrade
   - hashicorp/tap
-  - homebrew/services
   - teamookla/speedtest
 
 homebrew_cask_apps:
@@ -67,6 +66,7 @@ homebrew_installed_packages:
   - docker-credential-helper
   - dockerize
   - fish
+  - ghostty
   - jq
   - hashicorp/tap/waypoint
   - hashicorp/tap/terraform
