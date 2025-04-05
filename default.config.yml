@@ -66,6 +66,7 @@ homebrew_installed_packages:
   - docker-credential-helper
   - dockerize
   - fish
+  - helm
   - ghostty
   - jq
   - hashicorp/tap/waypoint
@@ -74,6 +75,8 @@ homebrew_installed_packages:
   - httpie
   - git
   - gnu-sed
+  - k9s
+  - kubectx
   - make
   - mas
   - orbstack
