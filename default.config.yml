@@ -38,6 +38,7 @@ homebrew_cask_apps:
   - istat-menus
   - jetbrains-toolbox
   - karabiner-elements
+  - lens
   - logi-options-plus
   - microsoft-teams
   - obsidian
@@ -77,11 +78,14 @@ homebrew_installed_packages:
   - gnu-sed
   - k9s
   - kubectx
+  - kustomize
   - make
   - mas
   - orbstack
   - postgresql@15
+  - pgcli
   - shellcheck
+  - skaffold
   - speedtest
   - ssh-copy-id
   - terminal-notifier

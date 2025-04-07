@@ -16,6 +16,9 @@ alias la="ls -lhaF"
 alias d="docker"
 alias dc="docker-compose"
 
+# k8s
+alias k="kubectl"
+
 #
 # Exports
 #
