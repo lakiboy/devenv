@@ -62,9 +62,6 @@ homebrew_installed_packages:
   - circleci
   - colima
   - curl
-  - docker
-  - docker-compose
-  - docker-credential-helper
   - dockerize
   - fish
   - helm
@@ -82,27 +79,26 @@ homebrew_installed_packages:
   - make
   - mas
   - orbstack
-  - postgresql@15
+  - podman
   - pgcli
   - shellcheck
   - skaffold
   - speedtest
   - ssh-copy-id
   - terminal-notifier
-  - tilt
   - wget
 
-mas_installed_apps:
-  - { id: 640199958, name: "Apple Developer" }
-  - { id: 425264550, name: "Blackmagic Disk Speed Test" }
-  - { id: 406056744, name: "Evernote" }
-  - { id: 1295203466, name: "Microsoft Remote Desktop" }
-  - { id: 1274495053, name: "Microsoft To Do" }
-  - { id: 540348655, name: "Monosnap" }
-  - { id: 1289583905, name: "Pixelmator Pro" }
-  - { id: 803453959, name: "Slack for Desktop" }
-  - { id: 1508732804, name: "Soulver 3" }
-  - { id: 1545870783, name: "System Color Picker" }
-  - { id: 747648890, name: "Telegram" }
-  - { id: 310633997, name: "WhatsApp Messenger" }
-  - { id: 497799835, name: "Xcode" }
+mas_installed_app_ids:
+  - 640199958   # Apple Developer
+  - 425264550   # Blackmagic Disk Speed Test
+  - 406056744   # Evernote
+  - 1295203466  # Microsoft Remote Desktop
+  - 1274495053  # Microsoft To Do
+  - 540348655   # Monosnap
+  - 1289583905  # Pixelmator Pro
+  - 803453959   # Slack for Desktop
+  - 1508732804  # Soulver 3
+  - 1545870783  # System Color Picker
+  - 747648890   # Telegram
+  - 310633997   # WhatsApp Messenger
+  - 497799835   # Xcode
