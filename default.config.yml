@@ -19,6 +19,7 @@ colima_disk: 64
 homebrew_taps:
   - buo/cask-upgrade
   - hashicorp/tap
+  - robscott/tap
   - teamookla/speedtest
 
 homebrew_cask_apps:
@@ -64,6 +65,7 @@ homebrew_installed_packages:
   - curl
   - dockerize
   - fish
+  - hcloud
   - helm
   - ghostty
   - jq
@@ -81,6 +83,7 @@ homebrew_installed_packages:
   - orbstack
   - podman
   - pgcli
+  - robscott/tap/kube-capacity
   - shellcheck
   - skaffold
   - speedtest
