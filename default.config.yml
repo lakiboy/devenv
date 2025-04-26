@@ -61,6 +61,7 @@ homebrew_installed_packages:
   - awscli
   - caddy
   - circleci
+  - cmctl
   - colima
   - curl
   - dockerize
@@ -88,6 +89,7 @@ homebrew_installed_packages:
   - skaffold
   - speedtest
   - ssh-copy-id
+  - stern
   - terminal-notifier
   - wget
 
