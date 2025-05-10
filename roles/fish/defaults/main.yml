@@ -5,3 +5,4 @@ fish_config_file: "{{ ansible_user_dir }}/.config/fish/config.fish"
 fish_exports:
   GPG_TTY: "(tty)"
   LANG: "en_US.UTF-8"
+  LC_ALL: "en_US.UTF-8"

@@ -35,7 +35,6 @@ homebrew_cask_apps:
   - google-chrome
   - google-cloud-sdk
   - gpg-suite
-  - iterm2
   - istat-menus
   - jetbrains-toolbox
   - karabiner-elements
@@ -46,6 +45,7 @@ homebrew_cask_apps:
   - nordvpn
   - ngrok
   - poedit
+  - protonvpn
   - proxyman
   - raspberry-pi-imager
   - rocket
@@ -77,6 +77,7 @@ homebrew_installed_packages:
   - git
   - gnu-sed
   - k9s
+  - kdoctor
   - kubectx
   - kustomize
   - make
@@ -84,6 +85,7 @@ homebrew_installed_packages:
   - orbstack
   - podman
   - pgcli
+  - rbenv
   - robscott/tap/kube-capacity
   - shellcheck
   - skaffold
@@ -102,7 +104,6 @@ mas_installed_app_ids:
   - 540348655   # Monosnap
   - 1289583905  # Pixelmator Pro
   - 803453959   # Slack for Desktop
-  - 1508732804  # Soulver 3
   - 1545870783  # System Color Picker
   - 747648890   # Telegram
   - 310633997   # WhatsApp Messenger
