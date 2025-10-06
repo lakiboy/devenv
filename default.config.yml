@@ -28,7 +28,6 @@ homebrew_cask_apps:
   - appcleaner
   - arc
   - cyberduck
-  - diffmerge
   - dropbox
   - firefox
   - github
@@ -65,6 +64,7 @@ homebrew_installed_packages:
   - colima
   - curl
   - dockerize
+  - ffmpeg
   - fish
   - hcloud
   - helm
@@ -85,6 +85,7 @@ homebrew_installed_packages:
   - orbstack
   - podman
   - pgcli
+  - pyenv-virtualenv
   - rbenv
   - robscott/tap/kube-capacity
   - shellcheck
@@ -95,16 +96,16 @@ homebrew_installed_packages:
   - terminal-notifier
   - wget
 
-mas_installed_app_ids:
-  - 640199958   # Apple Developer
-  - 425264550   # Blackmagic Disk Speed Test
-  - 406056744   # Evernote
-  - 1295203466  # Microsoft Remote Desktop
-  - 1274495053  # Microsoft To Do
-  - 540348655   # Monosnap
-  - 1289583905  # Pixelmator Pro
-  - 803453959   # Slack for Desktop
-  - 1545870783  # System Color Picker
-  - 747648890   # Telegram
-  - 310633997   # WhatsApp Messenger
-  - 497799835   # Xcode
+mas_installed_apps:
+  - { id: 640199958, name: "Developer" }
+  - { id: 425264550, name: "Blackmagic Disk Speed Test" }
+  - { id: 406056744, name: "Evernote" }
+  - { id: 1295203466, name: "Microsoft Remote Desktop" }
+  - { id: 1274495053, name: "Microsoft To Do" }
+  - { id: 540348655, name: "Monosnap" }
+  - { id: 1289583905, name: "Pixelmator Pro" }
+  - { id: 803453959, name: "Slack" }
+  - { id: 1545870783, name: "Color Picker" }
+  - { id: 747648890, name: "Telegram" }
+  - { id: 310633997, name: "WhatsApp" }
+  - { id: 497799835, name: "Xcode" }
