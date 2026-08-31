@@ -23,7 +23,7 @@ xcode-select --install
 Go to [brew.sh](https://brew.sh) and follow setup instructions.
 
 By default, _macOS_ uses [zsh](https://www.zsh.org) (we will switch it later). Make sure to complete _brew_ setup for _zsh_ for now.<br>
-Run commands proposed by your installation process
+Run commands proposed by your installation process.
 
 ## GitHub token
 
