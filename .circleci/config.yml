@@ -12,12 +12,8 @@ jobs:
       - checkout
       - run: pip install ansible ansible-lint
       - run: ansible-lint --version
-      - run:
-          command: ansible-galaxy install -r requirements.yml
-          working_directory: ansible
-      - run:
-          command: ansible-lint .
-          working_directory: ansible
+      - run: ansible-galaxy install -r requirements.yml
+      - run: ansible-lint .
 
 workflows:
   validate-setup:
