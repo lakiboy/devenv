@@ -1,0 +1,27 @@
+---
+
+- name: Check if fisher is downloaded
+  ansible.builtin.stat:
+    path: "{{ fish_fisher_config_file }}"
+  register: fish_fisher_downloaded
+
+- name: Download fisher
+  ansible.builtin.get_url:
+    url: "https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish"
+    dest: "{{ fish_fisher_config_file }}"
+    mode: "0644"
+  when: "not fish_fisher_downloaded.stat.exists"
+
+- name: Check if fisher plugin is installed
+  ansible.builtin.command:
+    cmd: "fish -c 'fisher --version'"
+  failed_when: false
+  changed_when: false
+  register: fish_fisher_plugin_installed
+
+- name: Install fisher plugins
+  ansible.builtin.command:
+    cmd: "fish -c 'fisher install {{ item }}'"
+  loop: "{{ fish_fisher_plugins }}"
+  changed_when: false
+  when: "fish_fisher_plugin_installed.rc == 0"

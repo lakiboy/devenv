@@ -11,6 +11,7 @@
       ansible.builtin.include_vars: "{{ item }}"
       with_fileglob:
         - ../config.yml
+      tags: [dotfiles, fish, git]
 
   roles:
     - role: geerlingguy.mac.homebrew

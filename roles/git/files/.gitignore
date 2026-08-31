@@ -28,7 +28,9 @@
 .Trashes
 
 # Apps
+.claude
 .idea
+.fleet
 .vagrant
 *.sublime-project
 *.sublime-workspace

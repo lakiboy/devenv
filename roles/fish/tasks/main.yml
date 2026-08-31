@@ -8,7 +8,7 @@
 
 - name: Ensure fish shell functions directory exists.
   ansible.builtin.file:
-    dest: "{{ ansible_user_dir }}/.config/fish/functions"
+    dest: "{{ ansible_facts['user_dir'] }}/.config/fish/functions"
     state: directory
     mode: "0755"
 
@@ -23,3 +23,8 @@
     src: config.fish
     dest: "{{ fish_config_file }}"
     mode: "0644"
+    backup: true
+
+- name: Install fisher with plugins
+  ansible.builtin.include_tasks: fisher.yml
+  when: "fish_fisher_enabled | default(omit)"

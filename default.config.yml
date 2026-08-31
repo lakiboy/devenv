@@ -3,87 +3,94 @@
 git_user_name: Dmitrijs Lakacauskis
 git_user_email: d@dmitrijs.io
 
+# https://github.com/settings/tokens
 github_token: ~
 
 fish_exports:
   GPG_TTY: "(tty)"
   LANG: "en_US.UTF-8"
+
   PGHOST: 127.0.0.1
   PGUSER: admin
   PGPASSWORD: admin
 
-colima_cpu: 4
-colima_memory: 12
-colima_disk: 64
+  RABBITMQ_ENDPOINT: http://127.0.0.1:15672
+  RABBITMQ_USERNAME: admin
+  RABBITMQ_PASSWORD: admin
 
 homebrew_taps:
   - buo/cask-upgrade
   - hashicorp/tap
+  - kubewall/tap
   - robscott/tap
+  - shivammathur/php
   - teamookla/speedtest
 
 homebrew_cask_apps:
   - 1password
   - alfred
-  - appcleaner
+  - android-studio
   - arc
+  - bruno
+  - chatgpt
+  - claude
+  - claude-code
+  - clipbook
   - cyberduck
   - dropbox
   - firefox
-  - github
+  - ghostty
   - google-chrome
   - google-cloud-sdk
   - gpg-suite
   - istat-menus
   - jetbrains-toolbox
+  - jiggler
   - karabiner-elements
-  - lens
-  - logi-options-plus
-  - microsoft-teams
-  - obsidian
-  - nordvpn
+  - logi-options+
   - ngrok
+  - obsidian
+  - orbstack
+  - pearcleaner
   - poedit
-  - protonvpn
   - proxyman
   - raspberry-pi-imager
-  - spotify
+  - shottr
+  - slack
   - vanilla
   - visual-studio-code
   - vlc
+  - wifiman
   - zoom
 
 homebrew_installed_packages:
-  - ansible
-  - ansible-lint
   - awscli
   - caddy
   - circleci
   - cmctl
-  - colima
   - curl
-  - dockerize
   - ffmpeg
   - fish
-  - hcloud
-  - helm
-  - ghostty
-  - jq
-  - hashicorp/tap/waypoint
-  - hashicorp/tap/terraform
-  - htop
-  - httpie
+  - gh
   - git
   - gnu-sed
+  - hashicorp/tap/terraform
+  - hcloud
+  - helm
+  - helmfile
+  - htop
+  - httpie
+  - iperf3
+  - jq
   - k9s
-  - kdoctor
   - kubectx
+  - kubernetes-cli
   - kustomize
   - make
   - mas
-  - orbstack
   - podman
   - pgcli
+  - pyenv
   - pyenv-virtualenv
   - rbenv
   - robscott/tap/kube-capacity
@@ -92,19 +99,16 @@ homebrew_installed_packages:
   - speedtest
   - ssh-copy-id
   - stern
-  - terminal-notifier
+  - terragrunt
   - wget
 
 mas_installed_apps:
-  - { id: 640199958, name: "Developer" }
   - { id: 425264550, name: "Blackmagic Disk Speed Test" }
-  - { id: 406056744, name: "Evernote" }
+  - { id: 1545870783, name: "Color Picker" }
+  - { id: 640199958, name: "Developer" }
   - { id: 1295203466, name: "Microsoft Remote Desktop" }
   - { id: 1274495053, name: "Microsoft To Do" }
-  - { id: 540348655, name: "Monosnap" }
   - { id: 1289583905, name: "Pixelmator Pro" }
-  - { id: 803453959, name: "Slack" }
-  - { id: 1545870783, name: "Color Picker" }
   - { id: 747648890, name: "Telegram" }
   - { id: 310633997, name: "WhatsApp" }
   - { id: 497799835, name: "Xcode" }
