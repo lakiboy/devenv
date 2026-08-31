@@ -10,11 +10,12 @@
     co = checkout
     aa = add --all
     st = status -s
-    lo = log --oneline
+    lo = "log --pretty=format:'[%h] (%an) %s (%aD/%ar)' --graph --date=short"
 
 [core]
     excludesfile = ~/.gitignore
-    whitespace=cr-at-eol
+    whitespace = cr-at-eol
+    abbrev = 7
 
 # Push easily - http://stackoverflow.com/a/23918418/89484
 [push]
