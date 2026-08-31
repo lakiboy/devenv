@@ -4,66 +4,87 @@
 
 IaC way to manage local development environment.
 
-## Requirements
+Roles included in this collection:
 
-#### Apple CLI tools
+ - `dotfiles`
+ - `fish`
+ - `git`
+
+## Install Apple CLI tools
 
 Launch the installer:
 
-```bash
+```console
 xcode-select --install
 ```
 
-#### Brew
+## Install Homebrew
 
-Install [brew](http://brew.sh).
+Go to [brew.sh](https://brew.sh) and follow setup instructions.
 
-#### Ansible
+By default, _macOS_ uses [zsh](https://www.zsh.org) (we will switch it later). Make sure to complete _brew_ setup for _zsh_ for now.<br>
+Run commands proposed by your installation process
 
-Install ansible:
+## GitHub token
 
-```bash
-brew install ansible
+Create [new token](https://github.com/settings/tokens/new) on _GitHub_. For simplicity choose _classic_ token type.
+Make sure to give full control to private repositories.
+
+## Install ansible
+
+Install pyenv manually:
+
+```console
+brew install pyenv-virtualenv
 ```
 
-Download dependencies (optional):
+Setting up Python:
 
-```bash
+```console
+pyenv install 3.14.6
+pyenv virtualenv 3.14.6 ansible
+pyenv activate ansible
+```
+
+Installing dependencies:
+
+```console
+pip install ansible ansible-lint
 ansible-galaxy install -r requirements.yml
 ```
 
-## Adjust config
+You're ready to run _Ansible_ playbooks now.
 
-You can overwrite default config:
+## Review configuration
 
-```bash
-cp default.config.yml config.yaml
+Default configuration is located at [default.config.yml](default.config.yml).
+
+Create your own configuration (ignored by _git_) and adjust values:
+
+```console
+cp default.config.yml config.yml
 ```
 
-and keep / adjust only necessary values.
+Both _default.config.yml_ and _config.yml_ will be loaded by _Ansible_.
 
-## Usage
+## Run playbooks
+
+When configuration file is ready you can run the playbooks one-by-one.
 
 Install software:
 
-```bash
+```console
 ansible-playbook playbooks/software.yml
 ```
 
 Configure _CLI_ and dotfiles:
 
-```bash
+```console
 ansible-playbook playbooks/cli.yml
 ```
 
 Generate _SSH_ key:
 
-```bash
+```console
 ansible-playbook playbooks/keys.yml
-```
-
-Run _Docker_:
-
-```bash
-ansible-playbook playbooks/docker.yml
 ```

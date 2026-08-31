@@ -1,9 +1,25 @@
-jobs:
-  build:
+version: 2.1
+
+executors:
+  python:
     docker:
-      - image: cimg/python:3.11.2
+      - image: cimg/python:3.14.6
+
+jobs:
+  validate-ansible:
+    executor: python
     steps:
       - checkout
       - run: pip install ansible ansible-lint
       - run: ansible-lint --version
-      - run: ansible-lint .
+      - run:
+          command: ansible-galaxy install -r requirements.yml
+          working_directory: ansible
+      - run:
+          command: ansible-lint .
+          working_directory: ansible
+
+workflows:
+  validate-setup:
+    jobs:
+      - validate-ansible
