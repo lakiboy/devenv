@@ -39,9 +39,9 @@ homebrew_cask_apps:
   - cyberduck
   - dropbox
   - firefox
+  - gcloud-cli
   - ghostty
   - google-chrome
-  - google-cloud-sdk
   - gpg-suite
   - istat-menus
   - jetbrains-toolbox
@@ -57,6 +57,7 @@ homebrew_cask_apps:
   - raspberry-pi-imager
   - shottr
   - slack
+  - transmission
   - vanilla
   - visual-studio-code
   - vlc
@@ -74,6 +75,7 @@ homebrew_installed_packages:
   - gh
   - git
   - gnu-sed
+  - graphviz
   - hashicorp/tap/terraform
   - hcloud
   - helm
@@ -106,9 +108,13 @@ mas_installed_apps:
   - { id: 425264550, name: "Blackmagic Disk Speed Test" }
   - { id: 1545870783, name: "Color Picker" }
   - { id: 640199958, name: "Developer" }
+  - { id: 409183694, name: "Keynote" }
   - { id: 1295203466, name: "Microsoft Remote Desktop" }
   - { id: 1274495053, name: "Microsoft To Do" }
+  - { id: 409201541, name: "Pages" }
   - { id: 1289583905, name: "Pixelmator Pro" }
+  - { id: 409203825, name: "Numbers" }
   - { id: 747648890, name: "Telegram" }
+  - { id: 899247664, name: "TestFlight" }
   - { id: 310633997, name: "WhatsApp" }
   - { id: 497799835, name: "Xcode" }
