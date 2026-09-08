@@ -80,6 +80,7 @@ homebrew_installed_packages:
   - hcloud
   - helm
   - helmfile
+  - hermes-agent
   - htop
   - httpie
   - iperf3
@@ -96,6 +97,7 @@ homebrew_installed_packages:
   - pyenv
   - pyenv-virtualenv
   - rbenv
+  - ripgrep
   - robscott/tap/kube-capacity
   - shellcheck
   - skaffold
@@ -103,6 +105,7 @@ homebrew_installed_packages:
   - ssh-copy-id
   - stern
   - terragrunt
+  - uv
   - wget
 
 mas_installed_apps:
