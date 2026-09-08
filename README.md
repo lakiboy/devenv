@@ -109,3 +109,13 @@ Generate _SSH_ key:
 ```console
 ansible-playbook playbooks/keys.yml
 ```
+
+## Setup PHP
+
+Download and install [PIE](https://github.com/php/pie).
+
+Install extensions:
+
+```console
+pie install php-amqp/php-amqp
+```

@@ -64,6 +64,7 @@ homebrew_cask_apps:
   - zoom
 
 homebrew_installed_packages:
+  - 1password-cli
   - awscli
   - caddy
   - circleci
@@ -96,10 +97,12 @@ homebrew_installed_packages:
   - podman
   - pyenv
   - pyenv-virtualenv
+  - rabbitmq-c
   - rbenv
   - ripgrep
   - robscott/tap/kube-capacity
   - shellcheck
+  - shivammathur/php/php@8.5
   - skaffold
   - speedtest
   - ssh-copy-id
