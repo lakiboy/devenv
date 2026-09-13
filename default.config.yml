@@ -19,6 +19,7 @@ fish_exports:
   RABBITMQ_PASSWORD: admin
 
 homebrew_taps:
+  - antoniorodr/memo
   - buo/cask-upgrade
   - hashicorp/tap
   - kubewall/tap
@@ -31,6 +32,7 @@ homebrew_cask_apps:
   - alfred
   - android-studio
   - arc
+  - brave-browser
   - bruno
   - chatgpt
   - claude
@@ -51,6 +53,7 @@ homebrew_cask_apps:
   - obsidian
   - orbstack
   - pearcleaner
+  - perplexity
   - poedit
   - proxyman
   - raspberry-pi-imager
@@ -64,6 +67,8 @@ homebrew_cask_apps:
   - zoom
 
 homebrew_installed_packages:
+  - 1password-cli
+  - antoniorodr/memo/memo
   - awscli
   - caddy
   - circleci
@@ -80,6 +85,8 @@ homebrew_installed_packages:
   - hcloud
   - helm
   - helmfile
+  - hermes-agent
+  - himalaya
   - htop
   - httpie
   - iperf3
@@ -95,14 +102,18 @@ homebrew_installed_packages:
   - podman
   - pyenv
   - pyenv-virtualenv
+  - rabbitmq-c
   - rbenv
+  - ripgrep
   - robscott/tap/kube-capacity
   - shellcheck
+  - shivammathur/php/php@8.5
   - skaffold
   - speedtest
   - ssh-copy-id
   - stern
   - terragrunt
+  - uv
   - wget
 
 mas_installed_apps:

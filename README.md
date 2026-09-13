@@ -32,7 +32,7 @@ Make sure to give full control to private repositories.
 
 ## Install ansible
 
-Install pyenv manually:
+#### Install with _pyenv_
 
 ```console
 brew install pyenv-virtualenv
@@ -50,6 +50,27 @@ Installing dependencies:
 
 ```console
 pip install ansible ansible-lint
+ansible-galaxy install -r requirements.yml
+```
+
+#### Install with _uv_
+
+```console
+brew install uv
+```
+
+Setting up Python:
+
+```console
+uv python install 3.14.6
+uv venv
+source .venv/bin/activate.fish
+```
+
+Installing dependencies:
+
+```console
+uv pip install ansible ansible-lint
 ansible-galaxy install -r requirements.yml
 ```
 
@@ -87,4 +108,14 @@ Generate _SSH_ key:
 
 ```console
 ansible-playbook playbooks/keys.yml
+```
+
+## Setup PHP
+
+Download and install [PIE](https://github.com/php/pie).
+
+Install extensions:
+
+```console
+pie install php-amqp/php-amqp
 ```
