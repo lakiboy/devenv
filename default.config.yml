@@ -52,6 +52,7 @@ homebrew_cask_apps:
   - obsidian
   - orbstack
   - pearcleaner
+  - perplexity
   - poedit
   - proxyman
   - raspberry-pi-imager
