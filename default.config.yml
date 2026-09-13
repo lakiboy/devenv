@@ -32,6 +32,7 @@ homebrew_cask_apps:
   - alfred
   - android-studio
   - arc
+  - brave-browser
   - bruno
   - chatgpt
   - claude
